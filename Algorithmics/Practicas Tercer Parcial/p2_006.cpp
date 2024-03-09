@@ -1,0 +1,133 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+	float peso;
+	printf("Inserte su peso: ");
+	scanf("%f", &peso);
+	
+	if(peso>0)
+	{
+		if(peso<=47)
+		{
+			printf("Paja");
+		}
+		else
+		{
+			if(peso<=49)
+			{
+				printf("Minimosca");
+			}
+			else
+			{
+				if(peso<=51)
+				{
+					printf("Mosca");
+				}
+				else
+				{
+					if(peso<=52)
+					{
+						printf("Supermosca");
+					}
+					else
+					{
+						if(peso<=53)
+						{
+							printf("Gallo");
+						}
+						else
+						{
+							if(peso<=55)
+							{
+								printf("Supergallo");
+							}
+							else
+							{
+								if(peso<=57)
+								{
+									printf("Pluma");
+								}
+								else
+								{
+									if(peso<=59)
+									{
+									    printf("Superpluma");	
+									}
+									else
+									{
+										if(peso<=61)
+										{
+										    printf("Ligero");	
+										}
+										else
+										{
+											if(peso<=63)
+											{
+											    printf("Superligero");	
+											}
+											else
+											{
+												if(peso<=66)
+												{
+											    	printf("Welter");	
+												}
+												else
+												{
+													if(peso<=69)
+													{
+														printf("Superwelter");
+													}
+													else
+													{
+													 	if(peso<=72)
+														{
+															printf("Medio");
+														}
+														else
+														{
+															if(peso<=76)
+															{
+																printf("Supermedio");
+															}
+															else
+															{
+																if(peso<=79)
+																{
+																	printf("Semipesado");
+																}
+																else
+																{
+																	if(peso<=86)
+																	{
+																		printf("Crucero");
+																	}
+																	else
+																	{
+																		printf("Pesado");
+																	}
+																}
+															}
+														}	
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	else
+	{
+		printf("El valor de peso no es v%clido", 160);
+	}
+	
+	return 0;
+}
