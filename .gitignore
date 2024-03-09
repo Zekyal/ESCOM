@@ -25,3 +25,7 @@ Teoria de Comunicaciones y Senales/
 # They have been discarded since they have no value for this repository.
 Applications_for_Network_Communications/*.docx
 Applications_for_Network_Communications/*.doc
+
+Compilers/*
+!Compilers/Practicas
+!Compilers/Apuntes de Clase
