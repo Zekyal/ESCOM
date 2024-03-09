@@ -1,2 +1,0 @@
-MulticastClient
-MulticastClient.MulticastNoBloqueante
