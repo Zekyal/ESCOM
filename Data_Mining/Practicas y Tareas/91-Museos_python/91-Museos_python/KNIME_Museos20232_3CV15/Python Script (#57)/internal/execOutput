@@ -1,0 +1,15 @@
+         CVE_ENT_x CVE_MUN  ...                 region binner
+<RowID>                     ...                              
+Row0            10     999  ...     Noroeste de México  12-22
+Row1            10     999  ...     Noroeste de México  12-22
+Row2            10     999  ...     Noroeste de México  32-42
+Row3            10     999  ...     Noroeste de México  12-22
+Row4            10     999  ...     Noroeste de México  12-22
+...            ...     ...  ...                    ...    ...
+Row11112        32     999  ...  Centronorte de México  22-32
+Row11113        32     999  ...  Centronorte de México  32-42
+Row11114        32     999  ...  Centronorte de México  42-52
+Row11115        32     999  ...  Centronorte de México  22-32
+Row11116        32     999  ...  Centronorte de México  42-52
+
+[11117 rows x 33 columns]
