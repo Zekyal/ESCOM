@@ -56,3 +56,32 @@ Computer_Architecture/*.JPG
 Computer_Networks/*.zip
 Computer_Networks/*.exe
 Computer_Networks/*.cpp
+
+Data_Mining/3-irisBIRT/*.txt
+Data_Mining/3-irisBIRT/workspace
+Data_Mining/4-ConsultasMuseos/*.rar
+Data_Mining/4-Museos-p1/*.rar
+Data_Mining/4-Museos-p1/workspace
+Data_Mining/6-ArbolID3_Golf/*.pmml
+Data_Mining/6-ArbolID3_Golf/workflow
+Data_Mining/6-ArbolID3_Golf/workspace
+Data_Mining/7-ejArbol_C4.5-CART iris/workspace
+Data_Mining/8-randomForest/.metadata
+Data_Mining/8-randomForest/Example Workflows
+Data_Mining/8-randomForest/KNIME_ejRandomForest_3CV15
+Data_Mining/8-randomForest/PFinalEq8Clustering
+Data_Mining/8-randomForest/workflow
+Data_Mining/9-reglasAsoc/workflow
+Data_Mining/10-regreLineal/workflow
+Data_Mining/91-Museos_python/workflow
+Data_Mining/PROYECTO_FINAL/workflow
+Data_Mining/pruebaPythonScript
+Data_Mining/segmentacion/workflow
+Data_Mining/Tarea3_Vacunas/*.rar
+Data_Mining/Tarea3_Vacunas/workflow
+Data_Mining/Tarea4_reglasAsociacion/*.rar
+Data_Mining/Tarea4_reglasAsociacion/workflow
+Data_Mining/Tarea5_ArbolesClasificacion/*.rar
+Data_Mining/Tarea5_ArbolesClasificacion/workflow
+Data_Mining/Tarea7_RegresionLineal/*.rar
+Data_Mining/Tarea7_RegresionLineal/workflow
