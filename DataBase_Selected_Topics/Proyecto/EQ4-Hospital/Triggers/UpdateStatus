@@ -1,0 +1,101 @@
+-- Trigger persona
+CREATE TRIGGER TR_UPD_Persona ON Persona AFTER UPDATE
+AS BEGIN 
+	INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+           ('UPDATE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Persona')
+END 
+
+-- Trigger paciente
+CREATE TRIGGER TR_UPD_Paciente ON Paciente AFTER UPDATE
+AS BEGIN 
+	INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+           ('UPDATE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Paciente')
+END 
+
+-- Trigger doctor
+CREATE TRIGGER TR_UPD_Doctor ON Doctor AFTER UPDATE
+AS BEGIN 
+	INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+           ('UPDATE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Doctor')
+END 
+
+-- Trigger cita
+CREATE TRIGGER TR_UPD_Cita ON Cita AFTER UPDATE
+AS BEGIN 
+	INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+           ('UPDATE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Cita')
+END
+
+-- Trigger departamento
+CREATE TRIGGER TR_UPD_Departamento ON Departamento AFTER UPDATE
+AS BEGIN 
+	INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+           ('UPDATE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Departamento')
+END
+
+-- Trigger especialidad
+CREATE TRIGGER TR_UPD_Especialidad ON Especialidad AFTER UPDATE
+AS BEGIN 
+	INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+           ('UPDATE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Especialidad')
+END

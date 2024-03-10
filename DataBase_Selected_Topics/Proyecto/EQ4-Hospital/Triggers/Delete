@@ -1,0 +1,106 @@
+-- Trigger de Persona
+CREATE TRIGGER TR_DEL_Persona ON Persona
+AFTER DELETE
+AS BEGIN
+INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+        ('DELETE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Persona')
+END 
+
+-- Trigger de Paciente 
+CREATE TRIGGER TR_DEL_Paciente ON Paciente 
+AFTER DELETE
+AS BEGIN 
+INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+        ('DELETE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Paciente')
+END 
+-- Trigger Doctor
+CREATE TRIGGER TR_DEL_Doctor ON Doctor
+AFTER DELETE
+AS BEGIN 
+INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+        ('DELETE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Doctor')
+END 
+
+-- Trigger Cita
+CREATE TRIGGER TR_DEL_Cita ON Cita
+AFTER DELETE
+AS BEGIN 
+INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+        ('DELETE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Cita')
+END 
+
+-- Trigger Departamento
+CREATE TRIGGER TR_DEL_dept ON Departamento
+AFTER DELETE
+AS BEGIN 
+INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+        ('DELETE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Departamento')
+END 
+
+-- Trigger Especialidad
+CREATE TRIGGER TR_DEL_Especialidad ON Especialidad
+AFTER DELETE
+AS BEGIN 
+INSERT INTO [dbo].[Bitacora]
+           ([operacion]
+           ,[usuario]
+           ,[host]
+           ,[modificado]
+           ,[tabla])
+     VALUES
+        ('DELETE'
+	   ,SUSER_NAME()
+	   ,@@SERVERNAME
+	   , GETDATE()
+	   ,'Especialidad')
+END 

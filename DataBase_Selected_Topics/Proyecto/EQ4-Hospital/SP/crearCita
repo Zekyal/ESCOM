@@ -1,0 +1,28 @@
+CREATE PROCEDURE sp_creacionCita (
+@NSS_paciente VARCHAR(11),
+@cedula_doc VARCHAR(16),
+@dia DATETIME,
+@diagno VARCHAR (60))
+AS
+BEGIN
+BEGIN TRY
+DECLARE @ultimacita INT
+SELECT @ultimacita = DATEDIFF(DAY, GETDATE(), @dia)
+IF (@ultimacita <= 0)
+  PRINT 'La cita no se puede agendar hoy, compruebe otra fecha'
+END TRY
+BEGIN CATCH
+ INSERT INTO [dbo].[Cita]
+           ([NSS_pac]
+           ,[Cedula_doc]
+           ,[Fecha]
+           ,[Diagnostico])
+     VALUES
+           ( @NSS_paciente
+           , @cedula_doc
+           , @dia
+           , @diagno);
+END CATCH
+END
+
+DROP PROCEDURE dbo.sp_creacionCita
