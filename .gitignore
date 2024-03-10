@@ -25,13 +25,34 @@ Teoria de Comunicaciones y Senales/
 # They have been discarded since they have no value for this repository.
 Applications_for_Network_Communications/*.docx
 Applications_for_Network_Communications/*.doc
+
 Compilers/*
 !Compilers/Practicas
 !Compilers/Apuntes de Clase
+Compilers/Practicas/Practica1_AFN/*
+!Compilers/Practicas/Practica1_AFN/*.txt
+!Compilers/Practicas/Practica1_AFN/*.py
+!Compilers/Practicas/Practica1_AFN/*.docx
+Compilers/Practicas/Practica2_AFN-E/*
+!Compilers/Practicas/Practica2_AFN-E/*.txt
+!Compilers/Practicas/Practica2_AFN-E/*.py
+!Compilers/Practicas/Practica2_AFN-E/*.docx
+Compilers/Practicas/Practica3_AFN-E_AFD/*
+!Compilers/Practicas/Practica3_AFN-E_AFD/*.txt
+!Compilers/Practicas/Practica3_AFN-E_AFD/*.py
+!Compilers/Practicas/Practica3_AFN-E_AFD/*.docx
+Compilers/Practicas/Practica4_Flex/*.pdf
+Compilers/Practicas/Practica4_Flex/*.rar
+Compilers/Practicas/Practica5_Bison/*.pdf
+Compilers/Practicas/Practica5_Bison/*.rar
+Compilers/Practicas/Practica6_Interprete/*.pdf
+Compilers/Practicas/Practica6_Interprete/*.rar
+
 Computer_Architecture/Apuntes de Clase
 Computer_Architecture/boostSharedDirFixApp
 Computer_Architecture/*.pdf
 Computer_Architecture/*.JPG
+
 Computer_Networks/*.zip
 Computer_Networks/*.exe
 Computer_Networks/*.cpp
