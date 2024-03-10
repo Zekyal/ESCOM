@@ -1,0 +1,302 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun 24 16:57:49 2020
+# Process ID: 18196
+# Current directory: C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.runs/synth_1
+# Command line: vivado.exe -log Unidad_Control.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Unidad_Control.tcl
+# Log file: C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.runs/synth_1/Unidad_Control.vds
+# Journal file: C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Unidad_Control.tcl -notrace
+Command: synth_design -top Unidad_Control -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16740 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 445.160 ; gain = 150.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Unidad_Control' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:12]
+INFO: [Synth 8-3491] module 'MfunCode' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/MfunCode.vhd:6' bound to instance 'MFunctCode' of component 'MfunCode' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'MfunCode' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/MfunCode.vhd:14]
+	Parameter D bound to: 20 - type: integer 
+	Parameter A bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MfunCode' (1#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/MfunCode.vhd:14]
+INFO: [Synth 8-3491] module 'MopCode' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/MopCode.vhd:6' bound to instance 'MOperationCode' of component 'MopCode' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'MopCode' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/MopCode.vhd:14]
+	Parameter D bound to: 20 - type: integer 
+	Parameter A bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MopCode' (2#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/MopCode.vhd:14]
+INFO: [Synth 8-3491] module 'Mux_SM' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Mux_SM.vhd:4' bound to instance 'MuxSM' of component 'Mux_SM' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'Mux_SM' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Mux_SM.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux_SM' (3#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Mux_SM.vhd:10]
+INFO: [Synth 8-3491] module 'Mux_SODPC' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Mux_SODPC.vhd:4' bound to instance 'MuxSODPC' of component 'Mux_SODPC' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'Mux_SODPC' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Mux_SODPC.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux_SODPC' (4#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Mux_SODPC.vhd:10]
+INFO: [Synth 8-3491] module 'Decodificador_Instruccion' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Decodificador_Instrucción.vhd:4' bound to instance 'Decodificador_de_Instruccion' of component 'Decodificador_Instruccion' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'Decodificador_Instruccion' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Decodificador_Instrucción.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Decodificador_Instruccion' (5#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Decodificador_Instrucción.vhd:9]
+INFO: [Synth 8-3491] module 'Nivel' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Nivel.vhd:4' bound to instance 'Level' of component 'Nivel' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Nivel' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Nivel.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Nivel' (6#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Nivel.vhd:9]
+INFO: [Synth 8-3491] module 'Registro_Estado' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Registro_Estado.vhd:4' bound to instance 'Registro_de_Estado' of component 'Registro_Estado' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'Registro_Estado' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Registro_Estado.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'Registro_Estado' (7#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Registro_Estado.vhd:10]
+INFO: [Synth 8-3491] module 'Condicion' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Condicion.vhd:4' bound to instance 'Condition' of component 'Condicion' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'Condicion' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Condicion.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Condicion' (8#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Condicion.vhd:9]
+INFO: [Synth 8-3491] module 'Carta_ASM' declared at 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Carta_ASM.vhd:4' bound to instance 'Unidad_de_Control' of component 'Carta_ASM' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Carta_ASM' [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Carta_ASM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Carta_ASM' (9#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Carta_ASM.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Unidad_Control' (10#1) [C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.srcs/sources_1/new/Unidad_Control.vhd:12]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 509.688 ; gain = 215.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 509.688 ; gain = 215.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 509.688 ; gain = 215.508
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 509.688 ; gain = 215.508
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Mux_SM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+Module Mux_SODPC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Decodificador_Instruccion 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module Nivel 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
+Module Registro_Estado 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module Condicion 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Carta_ASM 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 661.918 ; gain = 367.738
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 665.953 ; gain = 371.773
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     5|
+|4     |LUT3 |     2|
+|5     |LUT5 |    14|
+|6     |LUT6 |    26|
+|7     |FDCE |     6|
+|8     |FDRE |     2|
+|9     |IBUF |    16|
+|10    |OBUF |    21|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------+----------------+------+
+|      |Instance             |Module          |Cells |
++------+---------------------+----------------+------+
+|1     |top                  |                |    95|
+|2     |  Level              |Nivel           |     5|
+|3     |  Registro_de_Estado |Registro_Estado |     8|
+|4     |  Unidad_de_Control  |Carta_ASM       |    44|
++------+---------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 666.133 ; gain = 371.953
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 779.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 779.516 ; gain = 485.336
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 779.516 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User-Pc/Documents/Arquitectura/Practica_14_Unidad de Control/Practica_14_Unidad de Control.runs/synth_1/Unidad_Control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Unidad_Control_utilization_synth.rpt -pb Unidad_Control_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 24 16:58:18 2020...

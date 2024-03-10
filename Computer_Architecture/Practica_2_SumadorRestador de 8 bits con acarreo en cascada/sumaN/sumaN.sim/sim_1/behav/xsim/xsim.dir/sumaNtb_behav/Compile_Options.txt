@@ -1,0 +1,1 @@
+-wto "dcd70c18997c4d11ae2ba7070f9a9953" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sumaNtb_behav" "xil_defaultlib.sumaNtb" -log "elaborate.log" 

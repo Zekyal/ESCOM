@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar  2 10:56:35 2020
+# Process ID: 8972
+# Current directory: C:/Users/User-Pc/Documents/Arquitectura/sumaN/sumaN.runs/synth_1
+# Command line: vivado.exe -log sumaN.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sumaN.tcl
+# Log file: C:/Users/User-Pc/Documents/Arquitectura/sumaN/sumaN.runs/synth_1/sumaN.vds
+# Journal file: C:/Users/User-Pc/Documents/Arquitectura/sumaN/sumaN.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sumaN.tcl -notrace

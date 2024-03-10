@@ -1,0 +1,20 @@
+NET "a<3>"		LOC = "B1";
+NET "a<2>"		LOC = "B4";
+NET "a<1>"		LOC = "C4";
+NET "a<0>"		LOC = "C6";
+
+NET "b<0>"		LOC = "D15";
+NET "b<1>"		LOC = "F13";
+NET "b<2>"		LOC = "C16";
+NET "b<3>"		LOC = "G15";
+
+NET "cin"		LOC = "H14"; //SW3
+
+NET "cinL"		LOC = "K15"; //led0
+//NET "cout"		LOC = "N16"; //led3
+NET "cout"		LOC = "L14"; //led3
+
+NET "s<3>"		LOC = "P16"; //led4
+NET "s<2>"		LOC = "P15"; //led5
+NET "s<1>"		LOC = "R16"; //led6
+NET "s<0>"		LOC = "R15"; //led7

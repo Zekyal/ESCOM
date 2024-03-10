@@ -1,0 +1,1 @@
+-wto "6c0e98e9ce4946359b92620c64b18860" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "cartaASM_tb_behav" "xil_defaultlib.cartaASM_tb" -log "elaborate.log" 

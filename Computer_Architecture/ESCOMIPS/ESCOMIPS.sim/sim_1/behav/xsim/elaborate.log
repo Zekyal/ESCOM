@@ -1,0 +1,44 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 7e3e391135e544b0b7d6f1fc691e8375 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ESCOMIPS_tb_behav xil_defaultlib.ESCOMIPS_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Registro_clr [registro_clr_default]
+Compiling architecture behavioral of entity xil_defaultlib.CartaASM_UC [cartaasm_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Condicion_UC [condicion_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.DecodificadorInstruccion_UC [decodificadorinstruccion_uc_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.MicrocodigoFuncion_UC [microcodigofuncion_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.MicrocodigoOpcode_UC [microcodigoopcode_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.MuxSdopc_UC [muxsdopc_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.MultiplexorSm_UC [multiplexorsm_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nivel_UC [nivel_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegistroEstados_UC [registroestados_uc_default]
+Compiling architecture behavioral of entity xil_defaultlib.UnidadControl [unidadcontrol_default]
+Compiling architecture behavioral of entity xil_defaultlib.Pila [pila_default]
+Compiling architecture behavioral of entity xil_defaultlib.MemoriaPrograma [memoriaprograma_default]
+Compiling architecture behavioral of entity xil_defaultlib.Pila_MemoriaPrograma [pila_memoriaprograma_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux2a1_4bits [mux2a1_4bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux2a1_16bits [mux2a1_16bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.extSigno [extsigno_default]
+Compiling architecture behavioral of entity xil_defaultlib.extDireccion [extdireccion_default]
+Compiling architecture behavioral of entity xil_defaultlib.Registro [registro_default]
+Compiling architecture behavioral of entity xil_defaultlib.BarrelShifter [barrelshifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Demux [demux_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexor_16ch [multiplexor_16ch_default]
+Compiling architecture behavioral of entity xil_defaultlib.ArchivodeRegistros [archivoderegistros_default]
+Compiling architecture behavioral of entity xil_defaultlib.suma1 [suma1_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_1bit [alu_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU_Nbits [alu_nbits_default]
+Compiling architecture behavioral of entity xil_defaultlib.MemoriaDatos [memoriadatos_default]
+Compiling architecture behavioral of entity xil_defaultlib.ESCOMIPS [escomips_default]
+Compiling architecture behavioral of entity xil_defaultlib.escomips_tb
+Built simulation snapshot ESCOMIPS_tb_behav

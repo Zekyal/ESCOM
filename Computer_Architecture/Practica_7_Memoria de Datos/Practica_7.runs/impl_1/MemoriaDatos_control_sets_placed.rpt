@@ -1,0 +1,334 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Apr  6 20:11:56 2020
+| Host         : DESKTOP-JD1ALA5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MemoriaDatos_control_sets_placed.rpt
+| Design       : MemoriaDatos
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   256 |
+|    Minimum number of control sets                        |   256 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |     0 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   256 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   256 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal            | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | memData_reg_23040_23295_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_2304_2559_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_23296_23551_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_22784_23039_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_0_255_0_0_i_1_n_0       |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_10240_10495_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_10496_10751_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_1024_1279_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_11008_11263_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_10752_11007_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_11776_12031_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_11264_11519_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_11520_11775_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_12032_12287_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_12288_12543_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_12544_12799_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_12800_13055_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_13056_13311_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_1280_1535_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_13568_13823_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_13312_13567_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_14080_14335_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_14336_14591_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_13824_14079_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_15104_15359_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_14592_14847_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_14848_15103_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_15360_15615_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_1536_1791_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_15872_16127_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_16128_16383_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_15616_15871_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_16896_17151_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_16384_16639_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_16640_16895_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_17408_17663_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_17152_17407_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_17664_17919_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_17920_18175_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_18688_18943_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_1792_2047_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_18432_18687_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_18176_18431_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_19200_19455_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_19456_19711_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_18944_19199_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_20224_20479_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_19968_20223_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_20480_20735_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_19712_19967_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_20992_21247_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_20736_20991_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_2048_2303_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_21248_21503_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_21760_22015_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_21504_21759_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_22016_22271_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_22272_22527_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_22528_22783_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_23552_23807_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_24320_24575_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_23808_24063_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_24064_24319_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_25088_25343_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_24832_25087_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_24576_24831_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_256_511_0_0_i_1_n_0     |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_25600_25855_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_2560_2815_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_25344_25599_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_26368_26623_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_26112_26367_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_25856_26111_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_26624_26879_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_26880_27135_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_27392_27647_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_27136_27391_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_2816_3071_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_27648_27903_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_28160_28415_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_27904_28159_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_29184_29439_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_28672_28927_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_28416_28671_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_28928_29183_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_29952_30207_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_29440_29695_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_29696_29951_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_30720_30975_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_30464_30719_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_30208_30463_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_3072_3327_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_30976_31231_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_31744_31999_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_31232_31487_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_31488_31743_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_32512_32767_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_32768_33023_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_32000_32255_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_32256_32511_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_33024_33279_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_3328_3583_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_33280_33535_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_33536_33791_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_33792_34047_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_34048_34303_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_34304_34559_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_35072_35327_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_34816_35071_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_34560_34815_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_35328_35583_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_35584_35839_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_35840_36095_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_3584_3839_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_36608_36863_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_36864_37119_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_36352_36607_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_36096_36351_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_37376_37631_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_37888_38143_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_37632_37887_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_37120_37375_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_38400_38655_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_38144_38399_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_3840_4095_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_39168_39423_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_38656_38911_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_39424_39679_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_38912_39167_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_39680_39935_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_39936_40191_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_40448_40703_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_40192_40447_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_40704_40959_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_4096_4351_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_40960_41215_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_41472_41727_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_41216_41471_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_41984_42239_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_41728_41983_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_42240_42495_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_42752_43007_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_43008_43263_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_42496_42751_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_43264_43519_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_43776_44031_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_4352_4607_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_43520_43775_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_44288_44543_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_44544_44799_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_44032_44287_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_45568_45823_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_45312_45567_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_45056_45311_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_44800_45055_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_45824_46079_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_8704_8959_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_9216_9471_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_8960_9215_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_9472_9727_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_46080_46335_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_4608_4863_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_46592_46847_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_46336_46591_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_47360_47615_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_46848_47103_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_47616_47871_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_47104_47359_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_48128_48383_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_47872_48127_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_48384_48639_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_48640_48895_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_48896_49151_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_49152_49407_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_4864_5119_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_49920_50175_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_50176_50431_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_49664_49919_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_49408_49663_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_50944_51199_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_50432_50687_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_50688_50943_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_51456_51711_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_51200_51455_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_5120_5375_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_512_767_0_0_i_1_n_0     |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_51968_52223_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_52224_52479_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_51712_51967_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_52480_52735_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_53248_53503_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_52736_52991_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_52992_53247_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_5376_5631_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_53760_54015_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_54016_54271_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_53504_53759_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_54528_54783_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_54784_55039_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_55040_55295_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_54272_54527_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_56064_56319_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_55296_55551_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_55808_56063_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_55552_55807_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_56320_56575_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_5632_5887_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_56576_56831_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_57344_57599_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_57088_57343_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_56832_57087_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_57600_57855_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_58368_58623_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_58624_58879_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_58112_58367_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_57856_58111_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_58880_59135_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_59136_59391_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_5888_6143_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_59392_59647_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_59904_60159_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_59648_59903_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_60160_60415_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_60672_60927_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_61184_61439_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_60416_60671_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_60928_61183_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_61696_61951_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_61952_62207_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_6144_6399_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_61440_61695_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_62464_62719_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_62208_62463_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_62976_63231_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_62720_62975_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_63232_63487_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_63744_63999_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_63488_63743_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_64256_64511_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_64512_64767_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_6400_6655_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_64000_64255_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_64768_65023_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_65280_65535_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_65024_65279_0_0_i_1_n_0 |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_6656_6911_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_7424_7679_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_6912_7167_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_7168_7423_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_8192_8447_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_7936_8191_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_768_1023_0_0_i_1_n_0    |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_7680_7935_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_8448_8703_0_0_i_1_n_0   |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_9984_10239_0_0_i_1_n_0  |                  |               16 |             64 |
+|  clk_IBUF_BUFG | memData_reg_9728_9983_0_0_i_1_n_0   |                  |               16 |             64 |
++----------------+-------------------------------------+------------------+------------------+----------------+
+
+

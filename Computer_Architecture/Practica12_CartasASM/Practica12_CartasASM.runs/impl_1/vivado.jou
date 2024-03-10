@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue May 26 20:38:34 2020
+# Process ID: 18244
+# Current directory: C:/Users/146261/Documents/IPN ESCOM/Arquitectura/Practica12_CartasASM/Practica12_CartasASM.runs/impl_1
+# Command line: vivado.exe -log cartaASM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cartaASM.tcl -notrace
+# Log file: C:/Users/146261/Documents/IPN ESCOM/Arquitectura/Practica12_CartasASM/Practica12_CartasASM.runs/impl_1/cartaASM.vdi
+# Journal file: C:/Users/146261/Documents/IPN ESCOM/Arquitectura/Practica12_CartasASM/Practica12_CartasASM.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source cartaASM.tcl -notrace
