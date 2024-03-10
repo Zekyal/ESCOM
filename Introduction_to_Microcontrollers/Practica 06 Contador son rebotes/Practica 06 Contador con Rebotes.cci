@@ -1,0 +1,9 @@
+VERSION:3 SOURCE_TIMESTAMP:5162A090
+NODE:I LEVEL:0 LINE:24 "C:\cvavr2\inc\mega8535.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavr2\inc\delay.h"
+NODE:M LEVEL:0 LINE:26 "boton"
+NODE:V LEVEL:0 LINE:28 "botonp -> R2.0"
+NODE:V LEVEL:0 LINE:29 "botona -> R2.1"
+NODE:V LEVEL:0 LINE:30 "var -> R5"
+NODE:C LEVEL:0 LINE:31 "tabla7segmentos -> RAM:????"
+NODE:F LEVEL:0 LINE:33 "main(void)"
