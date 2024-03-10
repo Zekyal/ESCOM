@@ -1,0 +1,10 @@
+IPorigen: 8.40.1.30----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: d8:cb:8a:d5:7f:2f
+IPorigen: 8.40.1.32----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: d8:cb:8a:d5:7e:ca
+IPorigen: 8.40.1.54----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: d8:cb:8a:d5:80:33
+IPorigen: 8.40.1.153----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: d8:cb:8a:d5:7f:3d
+IPorigen: 8.40.1.163----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: d8:cb:8a:d5:81:cd
+IPorigen: 8.40.1.166----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: 84:2b:2b:b1:10:49
+IPorigen: 8.40.1.170----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: d8:cb:8a:d5:7a:80
+IPorigen: 8.40.1.210----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: d8:cb:8a:d2:84:aa
+IPorigen: 8.40.1.251----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: 98:fc:11:4d:9f:4f
+IPorigen: 8.40.1.254----------IP que contesto: 8.40.1.1 | MAC de IP que contesto: 00:14:d1:22:bf:0c
