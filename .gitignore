@@ -28,3 +28,10 @@ Applications_for_Network_Communications/*.doc
 Compilers/*
 !Compilers/Practicas
 !Compilers/Apuntes de Clase
+Computer_Architecture/Apuntes de Clase
+Computer_Architecture/boostSharedDirFixApp
+Computer_Architecture/*.pdf
+Computer_Architecture/*.JPG
+Computer_Networks/*.zip
+Computer_Networks/*.exe
+Computer_Networks/*.cpp
