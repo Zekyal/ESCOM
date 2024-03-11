@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2">
+  <Header copyright="mauro">
+    <Application name="KNIME" version="4.7.2"/>
+  </Header>
+  <DataDictionary numberOfFields="5">
+    <DataField name="JuegaGolf" optype="categorical" dataType="string">
+      <Value value="No"/>
+      <Value value="Si"/>
+    </DataField>
+    <DataField name="Panorama" optype="categorical" dataType="string">
+      <Value value="Lluvioso"/>
+      <Value value="Nublado"/>
+      <Value value="Soleado"/>
+    </DataField>
+    <DataField name="Temp" optype="categorical" dataType="string">
+      <Value value="Caliente"/>
+      <Value value="Templado"/>
+      <Value value="Frio"/>
+    </DataField>
+    <DataField name="Humedad" optype="categorical" dataType="string">
+      <Value value="Alta"/>
+      <Value value="Normal"/>
+    </DataField>
+    <DataField name="Viento" optype="continuous" dataType="boolean">
+      <Value value="false"/>
+      <Value value="true"/>
+    </DataField>
+  </DataDictionary>
+  <TreeModel modelName="DecisionTree" functionName="classification" splitCharacteristic="multiSplit" missingValueStrategy="lastPrediction" noTrueChildStrategy="returnNullPrediction">
+    <MiningSchema>
+      <MiningField name="Panorama" invalidValueTreatment="asIs"/>
+      <MiningField name="Temp" invalidValueTreatment="asIs"/>
+      <MiningField name="Humedad" invalidValueTreatment="asIs"/>
+      <MiningField name="Viento" invalidValueTreatment="asIs"/>
+      <MiningField name="JuegaGolf" invalidValueTreatment="asIs" usageType="target"/>
+    </MiningSchema>
+    <Node id="0" score="Si" recordCount="9.0">
+      <True/>
+      <ScoreDistribution value="No" recordCount="3.0"/>
+      <ScoreDistribution value="Si" recordCount="6.0"/>
+      <Node id="1" score="No" recordCount="3.0">
+        <SimplePredicate field="Panorama" operator="equal" value="Lluvioso"/>
+        <ScoreDistribution value="No" recordCount="2.0"/>
+        <ScoreDistribution value="Si" recordCount="1.0"/>
+      </Node>
+      <Node id="2" score="Si" recordCount="3.0">
+        <SimplePredicate field="Panorama" operator="equal" value="Nublado"/>
+        <ScoreDistribution value="No" recordCount="0.0"/>
+        <ScoreDistribution value="Si" recordCount="3.0"/>
+      </Node>
+      <Node id="3" score="Si" recordCount="3.0">
+        <SimplePredicate field="Panorama" operator="equal" value="Soleado"/>
+        <ScoreDistribution value="No" recordCount="1.0"/>
+        <ScoreDistribution value="Si" recordCount="2.0"/>
+      </Node>
+    </Node>
+  </TreeModel>
+</PMML>

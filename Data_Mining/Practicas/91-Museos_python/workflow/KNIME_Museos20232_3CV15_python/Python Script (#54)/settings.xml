@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import pandas as pd%%00010%%00010# These are the node's outputs that need to be populated:%%00010entrada = knio.input_tables[0].to_pandas()%%00010%%00010# -------------     EQUIVALENTE A NODO &quot;Group By&quot;   -------------%%00010%%00010# Agrupacion por NOMBRE_ENT_RESID y SEXO %%00010# Agregacion por promedio de EDAD%%00010grupo_sexo_entidad = entrada.groupby(['NOMBRE_ENT_RESID', 'SEXO'],as_index=False).agg({%%00010    'EDAD':'mean'%%00010})%%00010%%00010# Agrupacion por NOMBRE_ENT_RESID%%00010# Agregacion contar NOMBRE DE MUNICIPIO DE RESIDENCIA%%00010# Renombrar columnas de la tabla%%00010grupo_ent_mun = entrada.groupby(['NOMBRE_ENT_RESID'],as_index=False).agg({%%00010    'NOMBRE_MUN_RESID':'count'%%00010}).rename(columns={'NOMBRE_MUN_RESID':'Count(NOMBRE_MUN_RESID)'})%%00010%%00010# Agrupacion por MES_ENTREV y SEXO%%00010# Agregacion por promedio de EDAD%%00010# Renombrar columnas de la tabla%%00010grupo_entre_sexo = entrada.groupby(['MES_ENTREV', 'SEXO'],as_index=False).agg({%%00010    'EDAD':'mean'%%00010}).rename(columns={'EDAD':'Mean(EDAD)'})%%00010%%00010# Decolcer tablas como KNIME%%00010knio.output_tables[0] = knio.Table.from_pandas(grupo_sexo_entidad)%%00010knio.output_tables[1] = knio.Table.from_pandas(grupo_ent_mun)%%00010knio.output_tables[2] = knio.Table.from_pandas(grupo_entre_sexo)%%00010"/>
+        <entry key="python3_command" type="xstring" value=""/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.1.v202301311311"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.3.v202305111430"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+            <config key="port_1">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+            <config key="port_2">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 46, Cols: 3"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+        <config key="port_2">
+            <entry key="index" type="xint" value="2"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 23, Cols: 2"/>
+            <entry key="port_dir_location" type="xstring" value="port_2"/>
+        </config>
+        <config key="port_3">
+            <entry key="index" type="xint" value="3"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 10, Cols: 3"/>
+            <entry key="port_dir_location" type="xstring" value="port_3"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="7ef0cd6e-c99e-40a1-89e4-d13783967d76"/>
+    </config>
+</config>

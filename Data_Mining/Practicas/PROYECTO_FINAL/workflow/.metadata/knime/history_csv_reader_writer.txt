@@ -1,0 +1,10 @@
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\Credit Card Approvals.csv
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\clean_dataset.csv
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\ingresos_stc_0123.csv
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\afluenciastc_simple_05_2023.xlsx
+C:\Users\mauro\Downloads\stcmetro_kmz\STC_Metro_lineas.kmz
+C:\Users\mauro\Downloads\stcmetro_kmz\STC_Metro_estaciones.kmz
+C:\Users\mauro\Downloads\stcmetro_shp\STC_Metro_lineas_utm14n.shp
+C:\Users\mauro\Downloads\stcmetro_shp\STC_Metro_estaciones_utm14n.shp
+C:\Users\mauro\Downloads\stcmetro_shp\STC_Metro_estaciones_utm14n.prj
+C:\Users\mauro\Downloads\stcmetro_shp\STC_Metro_estaciones_utm14n.dbf

@@ -1,0 +1,310 @@
+2023-06-04 17:20:19,488 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-04 17:20:19,489 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-04 17:20:19,489 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-04 17:20:19,489 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-04 17:20:19,489 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-04 17:20:19,490 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-04 17:20:19,490 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-04 17:20:19,490 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-04 17:20:19,490 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-04 17:20:19,490 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-04 17:20:51,424 : WARN  : main :  : Node : File Reader : 3:1 : Please specify a file
+2023-06-04 17:22:05,784 : WARN  : main :  : Node : Column Rename : 3:2 : No configuration available
+2023-06-04 17:45:32,519 : ERROR : KNIME-Worker-10 :  : PythonSourceCodePanel : Python Script : 3:3 : NameError: name 'df' is not defined
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+NameError: name 'df' is not defined
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+NameError: name 'df' is not defined
+
+2023-06-04 17:45:42,474 : ERROR : KNIME-Worker-10 :  : PythonSourceCodePanel : Python Script : 3:3 : NameError: name 'y' is not defined
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+NameError: name 'y' is not defined
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+NameError: name 'y' is not defined
+
+2023-06-04 17:46:05,124 : ERROR : KNIME-Worker-13 :  : PythonSourceCodePanel : Python Script : 3:3 : NameError: name 'y' is not defined
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+NameError: name 'y' is not defined
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+NameError: name 'y' is not defined
+
+2023-06-04 17:54:13,372 : WARN  : main :  : Node : Association Rule Learner (Borgelt) : 3:4 : Column preset to null
+2023-06-04 17:54:13,373 : WARN  : main :  : Node : Association Rule Learner (Borgelt) : 3:4 : No transaction column available.
+2023-06-04 17:54:25,230 : WARN  : main :  : Node : Association Rule Learner : 3:4 : Expecting at least one column containing transactions,(BitVectors or CollectionCells)
+2023-06-04 17:56:35,664 : WARN  : main :  : Node : GroupBy : 3:4 : No grouping column included. Aggregate complete table.
+2023-06-04 17:56:35,664 : WARN  : main :  : Node : GroupBy : 3:4 : No aggregation column defined
+2023-06-04 17:56:35,664 : WARN  : main :  : Node : GroupBy : 3:4 : No aggregation column defined
+2023-06-04 17:56:35,698 : WARN  : main :  : Node : GroupBy : 3:4 : Please select at least one group or aggregation column
+2023-06-04 18:01:27,851 : WARN  : main :  : Node : GroupBy : 3:5 : No grouping column included. Aggregate complete table.
+2023-06-04 18:01:27,851 : WARN  : main :  : Node : GroupBy : 3:5 : No aggregation column defined
+2023-06-04 18:01:27,851 : WARN  : main :  : Node : GroupBy : 3:5 : No aggregation column defined
+2023-06-04 18:01:27,851 : WARN  : main :  : Node : GroupBy : 3:5 : Please select at least one group or aggregation column
+2023-06-04 18:10:16,010 : WARN  : main :  : Node : Association Rule Learner (Borgelt) : 3:6 : Column preset to List(handicapped-infants)
+2023-06-04 18:10:37,985 : WARN  : main :  : Node : Association Rule Learner (Borgelt) : 3:6 : No transaction column available.
+2023-06-04 18:23:33,840 : WARN  : main :  : Node : Column Merger : 3:7 : No settings available
+2023-06-04 18:25:54,299 : WARN  : main :  : Node : Column Combiner : 3:7 : No settings available.
+2023-06-04 18:33:21,112 : WARN  : main :  : Node : String Manipulation : 3:8 : No expression has been set.
+2023-06-04 18:40:16,280 : ERROR : KNIME-Worker-52 :  : PythonSourceCodePanel : Python Script : 3:9 : KeyError: 'key of type tuple not found and not a MultiIndex'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\series.py", line 1007, in __getitem__
+    return self._get_with(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\series.py", line 1022, in _get_with
+    return self._get_values_tuple(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\series.py", line 1060, in _get_values_tuple
+    raise KeyError("key of type tuple not found and not a MultiIndex")
+KeyError: 'key of type tuple not found and not a MultiIndex'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\series.py", line 1007, in __getitem__
+    return self._get_with(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\series.py", line 1022, in _get_with
+    return self._get_values_tuple(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\series.py", line 1060, in _get_values_tuple
+    raise KeyError("key of type tuple not found and not a MultiIndex")
+KeyError: 'key of type tuple not found and not a MultiIndex'
+
+2023-06-04 18:41:54,595 : WARN  : main :  : Node : Cell Splitter : 3:10 : Specify the column to split.
+2023-06-04 18:44:18,256 : WARN  : main :  : Node : Association Rule Learner (Borgelt) : 3:6 : No transaction column available.
+2023-06-04 18:44:35,104 : WARN  : KNIME-Worker-55-Cell Splitter 3:10 :  : Node : Association Rule Learner (Borgelt) : 3:6 : No transaction column available.
+2023-06-04 18:45:17,780 : WARN  : main :  : Node : Association Rule Learner (Borgelt) : 3:6 : No transaction column available.
+2023-06-04 18:45:18,451 : WARN  : main :  : Node : Association Rule Learner (Borgelt) : 3:6 : No transaction column available.
+2023-06-04 18:45:21,827 : WARN  : KNIME-Worker-56-Cell Splitter 3:10 :  : Node : Association Rule Learner (Borgelt) : 3:6 : No transaction column available.
+2023-06-04 18:48:05,486 : WARN  : main :  : Node : GroupBy : 3:11 : No grouping column included. Aggregate complete table.
+2023-06-04 18:48:05,486 : WARN  : main :  : Node : GroupBy : 3:11 : No aggregation column defined
+2023-06-04 18:48:05,486 : WARN  : main :  : Node : GroupBy : 3:11 : No aggregation column defined
+2023-06-04 18:48:05,486 : WARN  : main :  : Node : GroupBy : 3:11 : Please select at least one group or aggregation column
+2023-06-04 18:49:04,311 : WARN  : main :  : Node : Row Filter : 3:11 : No row filter specified
+2023-06-04 18:51:04,339 : WARN  : main :  : Node : Value Filter (legacy) : 3:12 : Auto-guessing default column and value.
+2023-06-04 18:52:11,712 : WARN  : KNIME-Worker-58-Row Filter 3:11 :  : Node : Row Filter : 3:11 : Node created an empty data table.
+2023-06-04 18:55:21,060 : WARN  : main :  : Node : Row Filter : 3:12 : No row filter specified
+2023-06-04 18:55:36,413 : WARN  : KNIME-Worker-60-Row Filter 3:12 :  : Node : Row Filter : 3:12 : Node created an empty data table.
+2023-06-04 19:18:13,272 : WARN  : main :  : WrappedNodeDialog : Association Rule Learner (Borgelt) : 3:6 : failed to apply settings: The minimum set size must be smaller or equal to the maximum set size.
+org.knime.core.node.InvalidSettingsException: The minimum set size must be smaller or equal to the maximum set size.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.ext.itemset.nodes.miner.ItemSetMinerNodeModel.validateSettings(ItemSetMinerNodeModel.java:432)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:692)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2060)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1140)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:635)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4790)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:191)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-06-04 19:18:20,057 : WARN  : main :  : WrappedNodeDialog : Association Rule Learner (Borgelt) : 3:6 : failed to apply settings: The minimum set size must be smaller or equal to the maximum set size.
+org.knime.core.node.InvalidSettingsException: The minimum set size must be smaller or equal to the maximum set size.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.ext.itemset.nodes.miner.ItemSetMinerNodeModel.validateSettings(ItemSetMinerNodeModel.java:432)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:692)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1184)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:1000)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:2060)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1140)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.callApplySettingsFromDialog(WrappedNodeDialog.java:672)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:635)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$6.widgetSelected(WrappedNodeDialog.java:510)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:957)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:864)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:846)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:172)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4790)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4251)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4068)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:191)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+2023-06-06 19:25:04,612 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-06 19:25:04,615 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-06 19:25:04,615 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-06 19:25:04,615 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-06 19:25:04,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-06 19:25:04,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-06 19:25:04,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-06 19:25:04,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-06 19:25:04,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-06 19:25:04,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-06 19:46:39,750 : WARN  : main :  : Node : Sorter : 3:20 : No selected columns to sort
+2023-06-06 19:52:57,320 : WARN  : main :  : Node : Row Filter : 3:20 : No row filter specified
+2023-06-06 19:55:34,385 : WARN  : KNIME-Worker-20-Row Filter 3:20 :  : Node : Row Filter : 3:20 : Node created an empty data table.
+2023-06-06 19:55:34,386 : WARN  : KNIME-Worker-21-Ungroup 3:14 :  : Node : Ungroup : 3:14 : Node created an empty data table.
+2023-06-06 19:55:34,387 : WARN  : KNIME-Worker-22-Column Filter 3:13 :  : Node : Column Filter : 3:13 : Node created an empty data table.
+2023-06-06 19:55:34,388 : WARN  : KNIME-Worker-20-Duplicate Row Filter 3:17 :  : Node : Duplicate Row Filter : 3:17 : Node created an empty data table.
+2023-06-11 16:50:39,188 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-11 16:50:39,190 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-11 16:50:39,190 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-11 16:50:39,190 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-11 16:50:39,190 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-11 16:50:39,190 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-11 16:50:39,190 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-11 16:50:39,190 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-11 16:50:39,191 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-11 16:50:39,191 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-12 03:52:42,478 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-12 03:52:42,478 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-12 03:52:42,478 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-12 03:52:42,478 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-12 03:52:42,478 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-12 03:52:42,478 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-12 03:52:42,478 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-12 03:52:42,482 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-12 03:52:42,482 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-12 03:52:42,482 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-12 03:55:12,059 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-12 03:55:12,059 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-12 03:55:12,063 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-12 04:01:20,199 : WARN  : ModalContext :  : VMFileLocker :  :  : Directory 'C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\Tarea_reglasAsociacion\workflow\reglasAsociacion' does not exist, cannot lock it

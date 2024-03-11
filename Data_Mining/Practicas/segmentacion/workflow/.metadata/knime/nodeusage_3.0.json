@@ -1,0 +1,81 @@
+
+{
+    "version": "4.7.2.v202303231026",
+    "created": "2023-06-19 19:00",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeFactory#Excel Reader",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 59,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory#Missing Value",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 61,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.cluster.kmeans.ClusterNodeFactory2#k-Means",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 43,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 1,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeFactory#Excel Writer",
+                "nrexecs": 0,
+                "nrfails": 1,
+                "exectime": 9,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 3087,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.io.filehandling.imagewriter.ImagePortWriterNodeFactory#Image Writer (Port)",
+                "nrexecs": 0,
+                "nrfails": 1,
+                "exectime": 61,
+                "nrcreated": 0,
+                "successor": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        }
+    },
+    "uptime": 9925824,
+    "workflowsOpened": 2,
+    "remoteWorkflowsOpened": 1,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "launches": 1,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 9925824,
+    "crashes": 0,
+    "properlyShutDown": true
+}

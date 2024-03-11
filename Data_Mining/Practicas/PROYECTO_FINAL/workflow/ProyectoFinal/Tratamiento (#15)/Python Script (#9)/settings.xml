@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010%%00010#   Lista Auxiliar de Meses%%00010meses = {&quot;Enero&quot;,&quot;Febrero&quot;,&quot;Marzo&quot;,&quot;Abril&quot;,&quot;Mayo&quot;,&quot;Junio&quot;,&quot;Julio&quot;, &quot;Agosto&quot;,%%00010            &quot;Septiembre&quot;,&quot;Octubre&quot;,&quot;Noviembre&quot;,&quot;Diciembre&quot;}%%00010%%00010%%00010# Conversion de KNIME a DataFrame%%00010ingreso = knio.input_tables[0].to_pandas()%%00010%%00010%%00010# ---------------------     TRATAMIENTO DE DATOS    ---------------------%%00010%%00010#   Rellena todos los valores NaN de INGRESO con 0s%%00010ingreso['ingreso'] = ingreso['ingreso'].fillna(0)%%00010%%00010#   Reemplaza el NUMERO DE MES por el NOMBRE DEL MES%%00010ingreso['Month (number)'] = ingreso['Month (number)'].replace(list(range(1, 13)), meses)%%00010%%00010#   Agrega la Leyenda &quot;Linea &quot; a los numeros de linea%%00010lineas_toReplace = ingreso['linea'].unique()    # obtener el dominio de LINEA%%00010new_lineas = []     # lista auxiliar%%00010%%00010# guardar &quot;Linea #&quot; en 'new_lineas', usando los valores contenidos en 'lineas_toReplace'%%00010for l in lineas_toReplace:%%00010    new_lineas.append('Linea ' + l)%%00010   %%00010# Reemplazar los valores de 'lineas_toReplace', por los de 'new_linea'%%00010ingreso['linea'] = ingreso['linea'].replace(lineas_toReplace, new_lineas) %%00010%%00010#   Reemplazamiento de un solo valor de RIPO_INGRESO, para mejorar su claridad%%00010ingreso['tipo_ingreso'] = ingreso['tipo_ingreso'].replace('Tarjetas', 'Compra de Tarjetas')%%00010%%00010# ---------------------     TRATAMIENTO DE DATOS    ---------------------%%00010%%00010%%00010# Tabla de Salida%%00010knio.output_tables[0] = knio.Table.from_pandas(ingreso)%%00010"/>
+        <entry key="python3_command" type="xstring" value=""/>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="tratamiento%%00013%%00010Datos"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="427"/>
+        <entry key="y-coordinate" type="xint" value="479"/>
+        <entry key="width" type="xint" value="106"/>
+        <entry key="height" type="xint" value="30"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="9"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.python3.scripting.nodes.script.PythonScriptNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Python Script"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Python 3 - Scripting Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python3.scripting.nodes"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.1.v202301311311"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python3.scripting.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.3.v202305111430"/>
+    <config key="factory_settings"/>
+    <config key="node_creation_config">
+        <config key="Input object (pickled)"/>
+        <config key="Input table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output table">
+            <config key="port_0">
+                <entry key="object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            </config>
+        </config>
+        <config key="Output image"/>
+        <config key="Output object (pickled)"/>
+    </config>
+    <entry key="name" type="xstring" value="Python Script"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 151260, Cols: 6"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="2c057c86-b519-4fe7-a8bc-358c601dcf71"/>
+    </config>
+</config>

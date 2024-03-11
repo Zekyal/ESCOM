@@ -1,0 +1,15 @@
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-05-08 15:09:39,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-05-08 15:09:59,453 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 3:3 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-05-08 15:09:59,455 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 3:14 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-05-08 15:09:59,456 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 3:23 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-05-08 15:09:59,457 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 3:26 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-05-08 15:09:59,472 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 3:17 : Internal model could not be loaded.

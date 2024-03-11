@@ -1,0 +1,130 @@
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-29 20:54:22,090 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-29 21:08:23,171 : ERROR : KNIME-Worker-4-Excel Reader 3:38 :  : Node : Excel Reader : 3:38 : Execute failed: The specified file D:\ESCOM\6 SEMESTRE\DATA MINING\Practicas\4-Museos_p1\VISITA21.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file D:\ESCOM\6 SEMESTRE\DATA MINING\Practicas\4-Museos_p1\VISITA21.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-04-29 21:08:31,853 : ERROR : KNIME-Worker-6 :  : PythonSourceCodePanel : Python Script : 3:66 : AttributeError: 'NoneType' object has no attribute 'to_arrow_table'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.1.v202301311311\src\main\python\knime\_arrow\_table.py", line 225, in to_pandas
+    return kap.arrow_data_to_pandas_df(self.to_pyarrow(sentinel))
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.1.v202301311311\src\main\python\knime\_arrow\_table.py", line 228, in to_pyarrow
+    table = katy.unwrap_primitive_arrays(self._get_table())
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.1.v202301311311\src\main\python\knime\_arrow\_table.py", line 322, in _get_table
+    return self._source.to_arrow_table()
+AttributeError: 'NoneType' object has no attribute 'to_arrow_table'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.1.v202301311311\src\main\python\knime\_arrow\_table.py", line 225, in to_pandas
+    return kap.arrow_data_to_pandas_df(self.to_pyarrow(sentinel))
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.1.v202301311311\src\main\python\knime\_arrow\_table.py", line 228, in to_pyarrow
+    table = katy.unwrap_primitive_arrays(self._get_table())
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.1.v202301311311\src\main\python\knime\_arrow\_table.py", line 322, in _get_table
+    return self._source.to_arrow_table()
+AttributeError: 'NoneType' object has no attribute 'to_arrow_table'
+
+2023-04-29 21:10:44,646 : WARN  : KNIME-Worker-7-Python Script 3:66 :  : Node : Column Rename : 3:52 : The following columns are configured but no longer exist: "tiempoTotal"
+2023-04-29 21:10:44,648 : WARN  : KNIME-Worker-7-Python Script 3:66 :  : Node : Math Formula : 3:57 : No such column: tiempoTotal
+2023-04-29 21:10:46,201 : WARN  : KNIME-Worker-8-Joiner (deprecated) 3:6 :  : Node : Column Rename : 3:52 : The following columns are configured but no longer exist: "tiempoTotal"
+2023-04-29 21:10:46,203 : WARN  : KNIME-Worker-7-Column Rename 3:52 :  : Node : Column Rename : 3:52 : The following columns are configured but no longer exist: "tiempoTotal"
+2023-04-29 21:10:46,206 : WARN  : KNIME-Worker-7-Column Rename 3:52 :  : Node : Math Formula : 3:57 : No such column: tiempoTotal
+2023-04-29 21:16:50,959 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-04-29 21:16:50,959 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-04-29 21:16:50,959 : WARN  : main :  : Node : GroupBy : 3:58 : 1 invalid aggregation column(s) found.
+2023-04-29 21:16:51,850 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-04-29 21:16:51,850 : WARN  : main :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-04-29 21:16:51,850 : WARN  : main :  : Node : GroupBy : 3:58 : 1 invalid aggregation column(s) found.
+2023-04-29 21:16:56,613 : WARN  : KNIME-Worker-26-Math Formula 3:57 :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-04-29 21:16:56,613 : WARN  : KNIME-Worker-26-Math Formula 3:57 :  : Node : GroupBy : 3:58 : No aggregation column defined
+2023-04-29 21:16:56,614 : WARN  : KNIME-Worker-26-Math Formula 3:57 :  : Node : GroupBy : 3:58 : 1 invalid aggregation column(s) found.
+2023-04-29 21:32:07,997 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-29 21:32:08,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-30 18:05:44,164 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-30 18:05:44,165 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-05-05 00:55:12,466 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-05-05 00:55:12,468 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-05-05 00:56:12,432 : ERROR : KNIME-ConfigurationArea-Checker :  : ConfigurationAreaChecker :  :  : Can't check integrity of configuration area ("C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\configuration"): The process cannot access the file because another process has locked a portion of the file
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.IOUtil.write(Unknown Source)
+	at java.base/sun.nio.ch.FileChannelImpl.write(Unknown Source)
+	at org.knime.core.internal.ConfigurationAreaChecker.lambda$0(ConfigurationAreaChecker.java:135)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-05-05 18:43:43,463 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

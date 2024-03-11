@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="all_columns">
+            <config key="0">
+                <entry key="old_column_name" type="xstring" value="Column0"/>
+                <entry key="new_column_name" type="xstring" value="Class Name"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="1">
+                <entry key="old_column_name" type="xstring" value="Column1"/>
+                <entry key="new_column_name" type="xstring" value="handicapped-infants"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="2">
+                <entry key="old_column_name" type="xstring" value="Column2"/>
+                <entry key="new_column_name" type="xstring" value="water-project-cost-sharing"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="3">
+                <entry key="old_column_name" type="xstring" value="Column3"/>
+                <entry key="new_column_name" type="xstring" value="adoption-of-the-budget-resolution"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="4">
+                <entry key="old_column_name" type="xstring" value="Column4"/>
+                <entry key="new_column_name" type="xstring" value="physician-fee-freeze"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="5">
+                <entry key="old_column_name" type="xstring" value="Column5"/>
+                <entry key="new_column_name" type="xstring" value="el-salvador-aid"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="6">
+                <entry key="old_column_name" type="xstring" value="Column6"/>
+                <entry key="new_column_name" type="xstring" value="religious-groups-in-schools"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="7">
+                <entry key="old_column_name" type="xstring" value="Column7"/>
+                <entry key="new_column_name" type="xstring" value="anti-satellite-test-ban"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="8">
+                <entry key="old_column_name" type="xstring" value="Column8"/>
+                <entry key="new_column_name" type="xstring" value="aid-to-nicaraguan-contras"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="9">
+                <entry key="old_column_name" type="xstring" value="Column9"/>
+                <entry key="new_column_name" type="xstring" value="mx-missile"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="10">
+                <entry key="old_column_name" type="xstring" value="Column10"/>
+                <entry key="new_column_name" type="xstring" value="immigration"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="11">
+                <entry key="old_column_name" type="xstring" value="Column11"/>
+                <entry key="new_column_name" type="xstring" value="synfuels-corporation-cutback"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="12">
+                <entry key="old_column_name" type="xstring" value="Column12"/>
+                <entry key="new_column_name" type="xstring" value="education-spending"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="13">
+                <entry key="old_column_name" type="xstring" value="Column13"/>
+                <entry key="new_column_name" type="xstring" value="superfund-right-to-sue"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="14">
+                <entry key="old_column_name" type="xstring" value="Column14"/>
+                <entry key="new_column_name" type="xstring" value="crime"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="15">
+                <entry key="old_column_name" type="xstring" value="Column15"/>
+                <entry key="new_column_name" type="xstring" value="duty-free-exports"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+            <config key="16">
+                <entry key="old_column_name" type="xstring" value="Column16"/>
+                <entry key="new_column_name" type="xstring" value="export-administration-act-south-africa"/>
+                <entry key="new_column_type" type="xint" value="0"/>
+            </config>
+        </config>
+    </config>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="Renombrar%%00013%%00010Columnas"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="287"/>
+        <entry key="y-coordinate" type="xint" value="279"/>
+        <entry key="width" type="xint" value="106"/>
+        <entry key="height" type="xint" value="30"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="16777215"/>
+        <entry key="defFontSize" type="xint" value="9"/>
+        <entry key="annotation-version" type="xint" value="20151123"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.rename.RenameNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Rename"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.7.0.v202301251625"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.7.2.v202303231026"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Rename"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 435, Cols: 17"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="c2a2a72a-ceb8-4f8d-b173-58b89d89fb6d"/>
+    </config>
+</config>

@@ -1,0 +1,3 @@
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\91-Museos_python\91-Museos_python\MPIO2021.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\91-Museos_python\91-Museos_python\CENTIDAD.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\91-Museos_python\91-Museos_python\VISITA21.xlsx

@@ -1,0 +1,3 @@
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\4-ConsultasMuseos\archivos\MPIO2021.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\4-ConsultasMuseos\archivos\CENTIDAD.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\4-ConsultasMuseos\archivos\VISITA21.xlsx

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="kMeans">
+    <entry key="dimensions" type="xint" value="7"/>
+    <entry key="ignoredColumns" type="xint" value="4"/>
+    <config key="clusterCoverage">
+        <entry key="array-size" type="xint" value="4"/>
+        <entry key="0" type="xint" value="26468"/>
+        <entry key="1" type="xint" value="11660"/>
+        <entry key="2" type="xint" value="8272"/>
+        <entry key="3" type="xint" value="9562"/>
+    </config>
+    <config key="kMeansCluster0">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="520353.17591053346"/>
+        <entry key="1" type="xdouble" value="2017.5587879703794"/>
+        <entry key="2" type="xdouble" value="797839.6355066505"/>
+    </config>
+    <config key="kMeansCluster1">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="568857.3982847341"/>
+        <entry key="1" type="xdouble" value="2017.0642367066896"/>
+        <entry key="2" type="xdouble" value="1.193287680751377E7"/>
+    </config>
+    <config key="kMeansCluster2">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="884283.1363636364"/>
+        <entry key="1" type="xdouble" value="2016.557906189555"/>
+        <entry key="2" type="xdouble" value="4.0661655824047655E7"/>
+    </config>
+    <config key="kMeansCluster3">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xdouble" value="643983.5713239908"/>
+        <entry key="1" type="xdouble" value="2016.7589416440076"/>
+        <entry key="2" type="xdouble" value="2.397596847018808E7"/>
+    </config>
+    <config key="FeatureNames">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xstring" value="Afluencia"/>
+        <entry key="1" type="xstring" value="Año"/>
+        <entry key="2" type="xstring" value="Ingreso"/>
+        <entry key="3" type="xstring" isnull="true" value=""/>
+        <entry key="4" type="xstring" isnull="true" value=""/>
+        <entry key="5" type="xstring" isnull="true" value=""/>
+        <entry key="6" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

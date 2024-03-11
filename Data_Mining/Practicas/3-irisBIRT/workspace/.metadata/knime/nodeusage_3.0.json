@@ -1,0 +1,105 @@
+
+{
+    "version": "4.7.2.v202303231026",
+    "created": "2023-04-03 20:41",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory#CSV Reader",
+                "nrexecs": 1,
+                "nrfails": 3,
+                "exectime": 90,
+                "nrcreated": 0,
+                "successor": "org.knime.base.node.rules.engine.RuleEngineFilterNodeFactory#Rule-based Row Filter"
+            },
+            {
+                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 3,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.reporting.nodes.dataset.ReportingDataSetNodeFactory#Data to Report",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 2,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.rules.engine.RuleEngineFilterNodeFactory#Rule-based Row Filter",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 11,
+                "nrcreated": 3,
+                "successor": "org.knime.base.node.rules.engine.RuleEngineFilterNodeFactory#Rule-based Row Filter"
+            },
+            {
+                "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 20,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Bar Chart",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 3137,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Box Plot",
+                "nrexecs": 6,
+                "nrfails": 0,
+                "exectime": 8326,
+                "nrcreated": 2,
+                "successor": "org.knime.reporting.nodes.dataset.ReportingImageNodeFactory#Image to Report"
+            },
+            {
+                "id": "org.knime.reporting.nodes.dataset.ReportingImageNodeFactory#Image to Report",
+                "nrexecs": 7,
+                "nrfails": 0,
+                "exectime": 120,
+                "nrcreated": 2,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jfc.node.barchart.JfcBarChartNodeFactory#Bar Chart (JFreeChart)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 122,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.python3.scripting.nodes.script.PythonScriptNodeFactory#Python Script",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        }
+    },
+    "uptime": 485,
+    "workflowsOpened": 10,
+    "remoteWorkflowsOpened": 2,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "launches": 12,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 5829,
+    "crashes": 0,
+    "properlyShutDown": true
+}

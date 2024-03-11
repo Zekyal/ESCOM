@@ -1,0 +1,106 @@
+2023-04-24 14:53:07,029 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-24 14:53:07,033 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-24 14:53:13,965 : WARN  : ModalContext :  : Node : Excel Reader (XLS) (deprecated) : 3:1 : The file/directory 'D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\6-ejArbolID3_Golf\archDatosJuegaGolf Arboles.xlsx' can't be accessed anymore!
+2023-04-24 14:53:13,970 : WARN  : ModalContext :  : Node : PMML Reader (deprecated) : 3:8 : Input file 'D:\Users\Fabiola\Desktop\arbol.pmml' does not exist
+2023-04-24 14:53:13,976 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 3:5 : Internal model could not be loaded.
+2023-04-24 14:53:13,980 : WARN  : ModalContext :  : Node : PMML Writer (deprecated) : 3:6 : Directory 'D:\Users\Fabiola\Desktop' of output file does not exist
+2023-04-24 14:53:18,345 : WARN  : Worker-5: Downloading statistics for node recommendations. :  : WorkflowCoachView :  :  : Could not update node recommendations statistics.
+java.io.IOException: Downloaded file doesn't contain node recommendation data.
+	at org.knime.workbench.workflowcoach.data.AbstractFileDownloadTripleProvider.checkDownloadedFile(AbstractFileDownloadTripleProvider.java:197)
+	at org.knime.workbench.workflowcoach.data.AbstractFileDownloadTripleProvider.update(AbstractFileDownloadTripleProvider.java:176)
+	at org.knime.workbench.workflowcoach.prefs.UpdateJob.run(UpdateJob.java:132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\6-ArbolID3_Golf\workspace\.metadata\knime\file_download.temp
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newInputStream(Unknown Source)
+	at org.knime.workbench.workflowcoach.data.AbstractFileDownloadTripleProvider.checkDownloadedFile(AbstractFileDownloadTripleProvider.java:194)
+	... 3 more
+2023-04-24 14:57:02,807 : ERROR : KNIME-Worker-3-Excel Reader (XLS) (deprecated) 3:1 :  : Node : Excel Reader (XLS) (deprecated) : 3:1 : Execute failed: D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\6-ejArbolID3_Golf\archDatosJuegaGolf Arboles.xlsx
+java.nio.file.NoSuchFileException: D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\6-ejArbolID3_Golf\archDatosJuegaGolf Arboles.xlsx
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.fs.local.fs.LocalFileSystemProvider.readAttributes(LocalFileSystemProvider.java:291)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.defaultnodesettings.FileChooserHelper.getPaths(FileChooserHelper.java:177)
+	at org.knime.base.node.io.filehandling.FileHandlingUtil.createDataTable(FileHandlingUtil.java:103)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:154)
+	at org.knime.ext.poi2.node.read4.XLSReaderNodeModel.execute(XLSReaderNodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-04-24 15:05:43,421 : WARN  : main :  : Node : PMML Writer (deprecated) : 3:6 : Directory 'D:\Users\Fabiola\Desktop' of output file does not exist
+2023-04-24 15:06:45,580 : WARN  : KNIME-Worker-5-Excel Reader (XLS) (deprecated) 3:1 :  : Node : PMML Writer (deprecated) : 3:6 : Directory 'D:\Users\Fabiola\Desktop' of output file does not exist
+2023-04-24 15:06:45,735 : WARN  : KNIME-Worker-7-Decision Tree Learner 3:3 :  : Node : PMML Writer (deprecated) : 3:6 : Directory 'D:\Users\Fabiola\Desktop' of output file does not exist
+2023-04-24 15:38:13,655 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:1 : Input file 'D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\7-C4.5-CART\irisDatos.csv' does not exist
+2023-04-24 15:38:13,656 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:2 : Input file 'D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\7-C4.5-CART\irisDatos.csv' does not exist
+2023-04-24 15:38:13,669 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 4:0:15 : Internal model could not be loaded.
+2023-04-24 15:39:21,549 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:1 : Input file 'D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\7-C4.5-CART\irisDatos.csv' does not exist
+2023-04-24 15:39:21,550 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:2 : Input file 'D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\7-C4.5-CART\irisDatos.csv' does not exist
+2023-04-27 19:59:53,027 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-27 19:59:53,028 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-30 18:56:47,473 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-30 18:56:47,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-30 19:16:05,459 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-30 19:16:05,459 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-30 19:16:05,459 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-30 19:16:05,460 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-30 19:16:05,460 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-30 19:16:05,460 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-30 19:16:05,460 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-30 19:16:05,460 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-30 19:16:05,460 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-30 19:16:05,460 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-05-02 00:43:28,955 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-05-02 00:43:28,956 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

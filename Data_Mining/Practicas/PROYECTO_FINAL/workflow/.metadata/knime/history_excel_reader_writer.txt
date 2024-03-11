@@ -1,0 +1,5 @@
+C:\Users\mauro\Downloads\Proy4_eq4_RA\archivos\Ejercicio_3_filtrado.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\FIFA World Cup Attendance.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\afluenciastc_simple_05_2023.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\ingresos_stc_0123.xlsx
+C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\PROYECTO_FINAL\archivos\prueba.xlsx

@@ -1,0 +1,594 @@
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-05-29 14:39:39,847 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-05-29 15:02:27,863 : ERROR : Clear OSGi configuration :  : InvokeInstallSiteAction :  :  : Could not clean OSGi configuration area: C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\configuration\org.eclipse.osgi\112\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-05-29 15:02:44,400 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-05-29 15:02:44,404 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-05-29 15:02:44,404 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-05-29 15:07:26,397 : ERROR : KNIME-Worker-5-Excel Reader 3:39 :  : Node : Excel Reader : 3:39 : Execute failed: The specified file E:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas\4-MuseosInegi2022\paraLosAlumnos\CENTIDAD.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file E:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas\4-MuseosInegi2022\paraLosAlumnos\CENTIDAD.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:07:26,397 : ERROR : KNIME-Worker-6-Excel Reader 3:40 :  : Node : Excel Reader : 3:40 : Execute failed: The specified file E:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas\4-MuseosInegi2022\paraLosAlumnos\MPIO2021.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file E:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas\4-MuseosInegi2022\paraLosAlumnos\MPIO2021.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:08:39,588 : WARN  : main :  : Node : CSV Reader : 4:1 : Please specify a file
+2023-05-29 15:13:31,732 : ERROR : KNIME-Worker-22 :  : PythonSourceCodePanel : Python Script : 4:2 : KeyError: 'sepal_lenght'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_lenght'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_lenght'
+
+2023-05-29 15:14:07,574 : ERROR : KNIME-Worker-22 :  : PythonSourceCodePanel : Python Script : 4:2 : KeyError: 'sepal_length'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+2023-05-29 15:14:20,929 : ERROR : KNIME-Worker-27-Python Script 4:2 :  : Node : Python Script : 4:2 : Execute failed: KeyError: 'sepal_length'
+org.knime.python2.kernel.PythonIOException: KeyError: 'sepal_length'
+	at org.knime.python3.scripting.nodes.AbstractPythonScriptingNodeModel.execute(AbstractPythonScriptingNodeModel.java:294)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python3.scripting.Python3KernelBackend.lambda$15(Python3KernelBackend.java:614)
+	at org.knime.core.util.ThreadUtils$CallableWithContextImpl.callWithContext(ThreadUtils.java:383)
+	at org.knime.core.util.ThreadUtils$CallableWithContext.call(ThreadUtils.java:269)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+2023-05-29 15:14:31,596 : ERROR : KNIME-Worker-29 :  : PythonSourceCodePanel : Python Script : 4:2 : KeyError: 'sepal_length'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+2023-05-29 15:14:38,777 : ERROR : KNIME-Worker-29 :  : PythonSourceCodePanel : Python Script : 4:2 : KeyError: 'sepal_lenght'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_lenght'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_lenght'
+
+2023-05-29 15:14:43,331 : ERROR : KNIME-Worker-30-Python Script 4:2 :  : Node : Python Script : 4:2 : Execute failed: KeyError: 'sepal_lenght'
+org.knime.python2.kernel.PythonIOException: KeyError: 'sepal_lenght'
+	at org.knime.python3.scripting.nodes.AbstractPythonScriptingNodeModel.execute(AbstractPythonScriptingNodeModel.java:294)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_lenght'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python3.scripting.Python3KernelBackend.lambda$15(Python3KernelBackend.java:614)
+	at org.knime.core.util.ThreadUtils$CallableWithContextImpl.callWithContext(ThreadUtils.java:383)
+	at org.knime.core.util.ThreadUtils$CallableWithContext.call(ThreadUtils.java:269)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_lenght'
+
+2023-05-29 15:14:59,680 : ERROR : KNIME-Worker-32 :  : PythonSourceCodePanel : Python Script : 4:2 : KeyError: 'sepal_length'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+2023-05-29 15:15:29,088 : ERROR : KNIME-Worker-34 :  : PythonSourceCodePanel : Python Script : 4:2 : KeyError: 'sepal_length'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 8, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\frame.py", line 3805, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.pythonscripting.channel.v1.bin.win32.x86_64_4.7.1.v202301201518\env\lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 'sepal_length'
+
+2023-05-29 15:29:33,177 : ERROR : KNIME-Worker-42 :  : PythonSourceCodePanel : Python Script : 5:53 : AttributeError: 'NoneType' object has no attribute 'to_arrow_table'
+org.knime.python2.kernel.PythonIOException: Executing the Python script failed: Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.3.v202305111430\src\main\python\knime\_arrow\_table.py", line 250, in to_pandas
+    return kap.arrow_data_to_pandas_df(self.to_pyarrow(sentinel))
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.3.v202305111430\src\main\python\knime\_arrow\_table.py", line 253, in to_pyarrow
+    table = katy.unwrap_primitive_arrays(self._get_table())
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.3.v202305111430\src\main\python\knime\_arrow\_table.py", line 347, in _get_table
+    return self._source.to_arrow_table()
+AttributeError: 'NoneType' object has no attribute 'to_arrow_table'
+
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:700)
+	at org.knime.python3.scripting.Python3KernelBackend.beautifyPythonTraceback(Python3KernelBackend.java:677)
+	at org.knime.python3.scripting.Python3KernelBackend.executeAndCheckOutputs(Python3KernelBackend.java:608)
+	at org.knime.python2.kernel.PythonKernel.executeAndCheckOutputs(PythonKernel.java:486)
+	at org.knime.python2.kernel.PythonKernelManager.lambda$1(PythonKernelManager.java:208)
+	at org.knime.python2.kernel.PythonKernelManager$3.run(PythonKernelManager.java:225)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.3.v202305111430\src\main\python\knime\_arrow\_table.py", line 250, in to_pandas
+    return kap.arrow_data_to_pandas_df(self.to_pyarrow(sentinel))
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.3.v202305111430\src\main\python\knime\_arrow\_table.py", line 253, in to_pyarrow
+    table = katy.unwrap_primitive_arrays(self._get_table())
+  File "C:\Users\mauro\.eclipse\903338280_win32_win32_x86_64\plugins\org.knime.python3.arrow_4.7.3.v202305111430\src\main\python\knime\_arrow\_table.py", line 347, in _get_table
+    return self._source.to_arrow_table()
+AttributeError: 'NoneType' object has no attribute 'to_arrow_table'
+
+2023-05-29 15:29:53,395 : ERROR : KNIME-Worker-48-Excel Reader 5:40 :  : Node : Excel Reader : 5:40 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\MPIO2021.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\MPIO2021.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:29:53,395 : ERROR : KNIME-Worker-47-Excel Reader 5:39 :  : Node : Excel Reader : 5:39 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\CENTIDAD.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\CENTIDAD.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:29:53,395 : ERROR : KNIME-Worker-49-Excel Reader 5:38 :  : Node : Excel Reader : 5:38 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\VISITA21.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\VISITA21.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:37:46,253 : ERROR : KNIME-Worker-53-Excel Reader 5:39 :  : Node : Excel Reader : 5:39 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\CENTIDAD.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\CENTIDAD.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:37:46,253 : ERROR : KNIME-Worker-55-Excel Reader 5:38 :  : Node : Excel Reader : 5:38 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\VISITA21.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\VISITA21.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:37:46,253 : ERROR : KNIME-Worker-54-Excel Reader 5:40 :  : Node : Excel Reader : 5:40 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\MPIO2021.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\MPIO2021.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:38:02,818 : ERROR : KNIME-Worker-61-Excel Reader 5:38 :  : Node : Excel Reader : 5:38 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\VISITA21.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\VISITA21.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:38:02,819 : ERROR : KNIME-Worker-60-Excel Reader 5:40 :  : Node : Excel Reader : 5:40 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\MPIO2021.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\MPIO2021.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:38:02,819 : ERROR : KNIME-Worker-59-Excel Reader 5:39 :  : Node : Excel Reader : 5:39 : Execute failed: The specified file \home\dwelle\knime\4-Museos_p1\CENTIDAD.xlsx does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \home\dwelle\knime\4-Museos_p1\CENTIDAD.xlsx does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeModel.execute(ExcelTableReaderNodeModel.java:106)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-05-29 15:42:05,268 : ERROR : KNIME-Worker-68-Excel Sheet Appender (XLS) (deprecated) 5:26 :  : Node : Excel Sheet Appender (XLS) (deprecated) : 5:26 : Execute failed: The path must be absolute.
+org.knime.core.node.InvalidSettingsException: The path must be absolute.
+	at org.knime.filehandling.core.defaultnodesettings.FileChooserHelper.getPathFromSettings(FileChooserHelper.java:244)
+	at org.knime.ext.poi2.node.write3.XLSWriter2NodeModel.execute(XLSWriter2NodeModel.java:144)
+	at org.knime.ext.poi2.node.write3.XLSWriter2NodeModel.execute(XLSWriter2NodeModel.java:1)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-06-04 17:40:29,615 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-04 17:40:29,616 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

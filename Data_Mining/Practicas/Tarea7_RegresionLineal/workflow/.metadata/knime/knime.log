@@ -1,0 +1,21 @@
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-16 19:46:34,551 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-16 19:46:41,702 : WARN  : ModalContext :  : Node : Excel Reader : 3:1 : The node configuration changed and the table spec will be recalculated during execution.
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-17 01:20:00,213 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

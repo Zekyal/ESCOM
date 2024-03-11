@@ -1,0 +1,170 @@
+2023-06-05 15:29:40,232 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-05 15:29:40,233 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-05 15:29:40,233 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-05 15:29:40,233 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-05 15:29:40,233 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-05 15:29:40,234 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-05 15:29:40,234 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-05 15:29:40,234 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-05 15:29:40,234 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-05 15:29:40,234 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-05 15:29:47,373 : WARN  : ModalContext :  : Node : Excel Reader (XLS) (deprecated) : 3:1 : The file/directory 'D:\Fabiola\Asignaturas\DataMining\2021-1 minDatos\practicas\regreLineal\pizzas.xlsx' can't be accessed anymore!
+2023-06-05 15:29:47,459 : WARN  : ModalContext :  : Node : MISSING Shapiro-Wilk Test : 3:7 : Node can't be executed - Node "Shapiro-Wilk Test" not available from extension "KNIME Statistics Nodes (Labs)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.stats2" is not installed)
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: KNIME_regreLIneal_PizzeriaPolito.knwf 3 loaded with error during data load
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: KNIME_regreLIneal_PizzeriaPolito.knwf 3
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Shapiro-Wilk Test" not available from extension "KNIME Statistics Nodes (Labs)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.stats2" is not installed)
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Excel Reader (XLS) (deprecated) 3:1
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Excel Reader (XLS) (deprecated)": No such data file: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Excel Reader _XLS_ (#1)\port_1\data.xml
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: State has changed from EXECUTED to CONFIGURED
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Linear Regression Learner 3:3
+2023-06-05 15:29:47,641 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Linear Regression Learner": Can't read spec file C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Linear Regression Learner (#3)\port_1\spec\spec.zip
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Linear Regression Learner (#3)\internal\model.xml.gz (The system cannot find the path specified)
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Scatter Plot (JFreeChart) 3:2
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Scatter Plot (JFreeChart)": Can't read spec file C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Scatter Plot _JFreeChart_ (#2)\port_1\spec\spec.zip
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Scatter Plot _JFreeChart_ (#2)\internal\ChartData (The system cannot find the path specified)
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Math Formula 3:4
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Math Formula": No such data file: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Math Formula (#4)\port_1\data.xml
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: MISSING Shapiro-Wilk Test 3:7
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "MISSING Shapiro-Wilk Test": No such data file: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Shapiro_Wilk Test (#7)\port_1\data.xml
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Linear Correlation 3:8
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Linear Correlation": No such data file: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Linear Correlation (#8)\port_1\data.xml
+2023-06-05 15:29:47,642 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load internally held tables for node "Linear Correlation": Cannot read directory C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Linear Correlation (#8)\internalTables\object_0
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Regression Predictor 3:10
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Regression Predictor": No such data file: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Regression Predictor (#10)\port_1\data.xml
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Math Formula 3:5
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Math Formula": No such data file: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Math Formula (#5)\port_1\data.xml
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Math Formula 3:9
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Math Formula": No such data file: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Math Formula (#9)\port_1\data.xml
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Scatter Plot (JFreeChart) 3:11
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "Scatter Plot (JFreeChart)": Can't read spec file C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Scatter Plot _JFreeChart_ (#11)\port_1\spec\spec.zip
+2023-06-05 15:29:47,643 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: C:\Users\mauro\AppData\Local\Temp\knime_temp_space_mauro_77806\KNIME_regreLIneal_PizzeriaPolito.knwf77807\C\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\10-regreLineal\KNIME_regreLIneal_PizzeriaPolito.knwf\Scatter Plot _JFreeChart_ (#11)\internal\ChartData (The system cannot find the path specified)
+2023-06-05 15:29:47,644 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: State has changed from EXECUTED to IDLE
+2023-06-05 15:29:50,467 : WARN  : Worker-7: Downloading statistics for node recommendations. :  : WorkflowCoachView :  :  : Could not update node recommendations statistics.
+java.io.IOException: Downloaded file doesn't contain node recommendation data.
+	at org.knime.workbench.workflowcoach.data.AbstractFileDownloadTripleProvider.checkDownloadedFile(AbstractFileDownloadTripleProvider.java:197)
+	at org.knime.workbench.workflowcoach.data.AbstractFileDownloadTripleProvider.update(AbstractFileDownloadTripleProvider.java:176)
+	at org.knime.workbench.workflowcoach.prefs.UpdateJob.run(UpdateJob.java:132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\10-regreLineal\workflow\.metadata\knime\file_download.temp
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(Unknown Source)
+	at java.base/java.nio.file.Files.newInputStream(Unknown Source)
+	at org.knime.workbench.workflowcoach.data.AbstractFileDownloadTripleProvider.checkDownloadedFile(AbstractFileDownloadTripleProvider.java:194)
+	... 3 more
+2023-06-05 15:30:45,868 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-05 15:30:45,869 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-05 15:30:51,715 : WARN  : ModalContext :  : Node : Excel Reader (XLS) (deprecated) : 3:1 : The file/directory 'D:\Fabiola\Asignaturas\DataMining\2021-1 minDatos\practicas\regreLineal\pizzas.xlsx' can't be accessed anymore!
+2023-06-05 15:42:55,076 : WARN  : main :  : Node : Math Formula : 3:5 : No such column: calculo
+2023-06-05 15:42:56,153 : WARN  : main :  : Node : Math Formula : 3:5 : No such column: calculo
+2023-06-05 15:42:57,755 : WARN  : KNIME-Worker-12-Math Formula 3:4 :  : Node : Math Formula : 3:5 : No such column: calculo
+2023-06-06 19:24:15,650 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-06 19:24:15,651 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-19 01:26:45,152 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-19 01:26:45,153 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-19 01:54:06,668 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 4:8:15 : Internal model could not be loaded.
+2023-06-19 01:54:06,673 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 4:6 : Internal model could not be loaded.
+2023-06-19 01:54:29,984 : WARN  : ModalContext :  : Node : GroupBy : 4:165 : No aggregation column defined
+2023-06-19 01:54:29,985 : WARN  : ModalContext :  : Node : GroupBy : 4:165 : No aggregation column defined
+2023-06-19 01:54:31,082 : WARN  : ModalContext :  : Node : GroupBy : 5:165 : No aggregation column defined
+2023-06-19 01:54:31,082 : WARN  : ModalContext :  : Node : GroupBy : 5:165 : No aggregation column defined
+2023-06-19 01:57:33,948 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:3 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-06-19 01:57:33,949 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:14 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-06-19 01:57:33,950 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:23 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-06-19 01:57:33,950 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 4:26 : Input file 'D:\Fabiola\Asignaturas\DataMining\2021-2 minDatos\Practicas\randomForest\irisDatos.csv' does not exist
+2023-06-19 01:57:33,954 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 4:17 : Internal model could not be loaded.
+2023-06-19 03:25:32,342 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-19 03:25:32,343 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-19 21:06:33,942 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-19 21:06:33,942 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-19 21:06:33,943 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-19 21:48:12,318 : ERROR : KNIME-Worker-3-File Reader 4:1 :  : Node : File Reader : 4:1 : Execute failed: The specified file C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\Tarea_reglasAsociacion\archivos\house-votes-84.data does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\Tarea_reglasAsociacion\archivos\house-votes-84.data does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-06-19 21:51:12,357 : ERROR : KNIME-Worker-6-File Reader 4:1 :  : Node : File Reader : 4:1 : Execute failed: The specified file C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\Tarea_reglasAsociacion\archivos\house-votes-84.data does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\mauro\Documents\Pasar a IPN_ESCOM\Data Mining\Practicas y Tareas\Tarea_reglasAsociacion\archivos\house-votes-84.data does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-06-19 22:53:15,421 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 5:1 : Input file 'D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\7-C4.5-CART\irisDatos.csv' does not exist
+2023-06-19 22:53:15,424 : WARN  : ModalContext :  : Node : CSV Reader (deprecated) : 5:2 : Input file 'D:\FABIOLA\Asignaturas\DataMining\2023-2_DM-BD\DataMining_3CV15\Practicas_20232_3CV15\7-C4.5-CART\irisDatos.csv' does not exist
+2023-06-19 22:53:15,438 : WARN  : ModalContext :  : Node : Decision Tree Predictor : 5:0:15 : Internal model could not be loaded.

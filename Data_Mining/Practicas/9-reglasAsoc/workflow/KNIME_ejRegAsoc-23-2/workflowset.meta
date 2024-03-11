@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+<met:element form="text" read-only="false" name="Author">&lt;unknown&gt;</met:element>
+<met:element form="date" read-only="false" name="Creation Date">1/0/1970/12:00:01 +02:00</met:element>
+<met:element form="multiline" read-only="false" name="Comments">Generating artificial association rules into existing shopping baskets
+
+This workflows takes an existing set of shopping baskets. These baskets are provided via a basket ID + each of the product ID.&#13;
+First, the support of apple, chips and gummi bears is increased, to get a sufficient support for our rule. &#13;
+Next, the rule is inserted by increasing the confident of the rule. This is realized by inserting gummi bears into baskets where apple and chips are already found.&#13;
+Finally the new rules are validated in the Association Rule Learner node.&#13;
+&#13;
+&#13;
+&#13;
+
+
+URL: Description of the modular data generation plugin https://www.knime.org/the-new-iris-data-modular-data-generators 
+URL: Paper about the data generation plugin https://www.uni-konstanz.de/mmsp/pubsys/publishedFiles/AdBe10.pdf
+TAGS: data generation,association rules</met:element>
+</met:KNIMEMetaInfo>

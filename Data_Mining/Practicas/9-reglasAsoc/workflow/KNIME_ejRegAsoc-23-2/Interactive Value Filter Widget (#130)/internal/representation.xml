@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="viewRepresentation">
+    <entry key="tableID" type="xstring" value="1881b635-4524-4c3e-a4f5-bf57e13c4df5"/>
+    <entry key="filterID" type="xstring" value="72eceb04-df41-4f71-b7c3-9f736ef8a0b1"/>
+    <entry key="disabled" type="xboolean" value="false"/>
+    <config key="possibleValues">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xstring" value="Cake"/>
+        <entry key="1" type="xstring" value="Coffee"/>
+        <entry key="2" type="xstring" value="Bread"/>
+    </config>
+    <entry key="column" type="xstring" value="Antecedent"/>
+    <entry key="label" type="xstring" isnull="true" value=""/>
+    <entry key="useMultiple" type="xboolean" value="true"/>
+    <entry key="type" type="xstring" value="Twinlist"/>
+    <entry key="limit_number_visible_options" type="xboolean" value="false"/>
+    <entry key="number_visible_options" type="xint" value="10"/>
+</config>

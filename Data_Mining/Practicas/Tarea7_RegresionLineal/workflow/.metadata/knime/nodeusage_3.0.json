@@ -1,0 +1,73 @@
+
+{
+    "version": "4.7.2.v202303231026",
+    "created": "2023-06-16 19:46",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeFactory#Excel Reader",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 58,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.stats.shapirowilk2.ShapiroWilk2NodeFactory#Shapiro-Wilk Test",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 65,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2#Linear Regression Learner",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 370,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeFactory2#Regression Predictor",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 41,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jep.JEPNodeFactory#Math Formula",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 12,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jfc.node.scatterplot.JfcScatterPlotNodeFactory#Scatter Plot (JFreeChart)",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 339,
+                "nrcreated": 0,
+                "successor": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        }
+    },
+    "uptime": 6330,
+    "workflowsOpened": 2,
+    "remoteWorkflowsOpened": 1,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "webUIPerspectiveSwitches": 0,
+    "launches": 2,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 12660,
+    "crashes": 0,
+    "properlyShutDown": true
+}

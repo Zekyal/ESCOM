@@ -1,0 +1,278 @@
+2023-04-03 20:09:27,609 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-03 20:09:27,613 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-03 20:41:02,344 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-03 20:41:02,344 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-03 20:41:02,348 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-03 20:42:01,773 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-03 20:46:36,603 : ERROR : KNIME-Worker-3-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\escom\Desktop\3-irisBIRT\irisDatos.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\escom\Desktop\3-irisBIRT\irisDatos.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-04-03 20:46:50,396 : WARN  : main :  : DeleteDataSetChange :  :  : deleting todosLosDatos
+2023-04-03 20:46:50,473 : WARN  : main :  : DeleteDataSetChange :  :  : deleting tresFlores
+2023-04-03 20:46:50,518 : WARN  : main :  : DeleteDataSetChange :  :  : deleting tablaDatos
+2023-04-03 20:46:50,570 : WARN  : main :  : DeleteDataSetChange :  :  : deleting cajaSetosa
+2023-04-03 20:47:02,785 : ERROR : KNIME-Worker-4-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\escom\Desktop\3-irisBIRT\irisDatos.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\escom\Desktop\3-irisBIRT\irisDatos.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-04-03 20:47:04,656 : ERROR : KNIME-Worker-5-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file C:\Users\escom\Desktop\3-irisBIRT\irisDatos.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\escom\Desktop\3-irisBIRT\irisDatos.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:272)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:222)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:297)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:204)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-04-03 23:28:42,335 : WARN  : main :  : WrappedNodeDialog : Rule-based Row Filter : 3:14 : failed to apply settings: line 5, col 0: Not a column: class
+org.knime.core.node.InvalidSettingsException: line 5, col 0: Not a column: class
+	at org.knime.base.node.rules.engine.RulePanel.saveSettings(RulePanel.java:571)
+	at org.knime.base.node.rules.engine.RuleEngineNodeDialog.saveSettingsTo(RuleEngineNodeDialog.java:114)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.text.ParseException: line 5, col 0: Not a column: class
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseColumnExpression(BaseRuleParser.java:1121)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseReference(BaseRuleParser.java:812)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOperand(BaseRuleParser.java:1025)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRelation(BaseRuleParser.java:837)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:757)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:712)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parseCondition(SimpleRuleParser.java:278)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parse(SimpleRuleParser.java:230)
+	at org.knime.base.node.rules.engine.RuleFactory.parse(RuleFactory.java:191)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:468)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:496)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:507)
+	at org.knime.base.node.rules.engine.RulePanel.saveSettings(RulePanel.java:569)
+	... 18 more
+2023-04-03 23:29:20,075 : WARN  : main :  : WrappedNodeDialog : Rule-based Row Filter : 3:14 : failed to apply settings: line 5, col 0: Not a column: class
+org.knime.core.node.InvalidSettingsException: line 5, col 0: Not a column: class
+	at org.knime.base.node.rules.engine.RulePanel.saveSettings(RulePanel.java:571)
+	at org.knime.base.node.rules.engine.RuleEngineNodeDialog.saveSettingsTo(RuleEngineNodeDialog.java:114)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.text.ParseException: line 5, col 0: Not a column: class
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseColumnExpression(BaseRuleParser.java:1121)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseReference(BaseRuleParser.java:812)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOperand(BaseRuleParser.java:1025)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRelation(BaseRuleParser.java:837)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseRootBooleanExpression(BaseRuleParser.java:757)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseAndExpression(BaseRuleParser.java:712)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseXorExpression(BaseRuleParser.java:689)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseOrExpression(BaseRuleParser.java:666)
+	at org.knime.base.node.rules.engine.BaseRuleParser.parseBooleanExpression(BaseRuleParser.java:654)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parseCondition(SimpleRuleParser.java:278)
+	at org.knime.base.node.rules.engine.SimpleRuleParser.parse(SimpleRuleParser.java:230)
+	at org.knime.base.node.rules.engine.RuleFactory.parse(RuleFactory.java:191)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:468)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:496)
+	at org.knime.base.node.rules.engine.RulePanel.computeRules(RulePanel.java:507)
+	at org.knime.base.node.rules.engine.RulePanel.saveSettings(RulePanel.java:569)
+	... 18 more
+2023-04-04 00:00:15,145 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-04 00:00:15,145 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-04 00:00:15,145 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-04 00:00:15,145 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-04 00:00:15,145 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-04 00:00:15,146 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-04 00:00:15,146 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-04 00:00:15,146 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-04 00:00:15,146 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-04 00:00:15,146 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-04 00:02:17,473 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-04 00:02:17,474 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-04 00:02:51,006 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-04 00:02:51,007 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-04 00:02:51,007 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-04 00:02:51,007 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-04 00:02:51,007 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-04 00:02:51,007 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-04 00:02:51,008 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-04 00:02:51,008 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-04 00:02:51,008 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-04 00:02:51,008 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-13 22:27:10,792 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-13 22:27:10,792 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-13 22:27:10,793 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-13 22:32:44,892 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-13 22:32:44,892 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-13 22:32:44,892 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-13 22:32:44,892 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-13 22:32:44,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-13 22:32:44,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-13 22:32:44,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-13 22:32:44,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-13 22:32:44,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-13 22:32:44,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-13 23:33:03,239 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-13 23:33:03,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-19 21:30:21,469 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-19 21:30:21,470 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-27 20:00:14,729 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-04-27 20:53:50,889 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-04-27 20:53:50,893 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-05-02 00:45:13,899 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-05-02 00:45:13,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

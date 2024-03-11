@@ -1,0 +1,51 @@
+2023-06-19 19:00:35,950 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-06-19 19:00:35,951 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-06-19 19:00:35,951 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-06-19 19:00:35,951 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-06-19 19:00:35,952 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-06-19 19:00:35,952 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-06-19 19:00:35,952 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-06-19 19:00:35,952 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-06-19 19:00:35,952 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-06-19 19:00:35,952 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-06-19 19:01:03,009 : WARN  : ModalContext :  : Node : Color Manager : 3:6 : Column "Genero" has no nominal values set: execute predecessor or add Binner.
+2023-06-19 19:01:23,621 : WARN  : main :  : Node : Color Manager : 3:6 : Column "Genero" has no nominal values set: execute predecessor or add Binner.
+2023-06-19 19:01:23,654 : WARN  : main :  : Node : Color Manager : 3:6 : Column "Genero" has no nominal values set: execute predecessor or add Binner.
+2023-06-19 19:01:23,714 : WARN  : main :  : Node : Color Manager : 3:6 : Column "Genero" has no nominal values set: execute predecessor or add Binner.
+2023-06-19 19:01:24,816 : WARN  : main :  : Node : Color Manager : 3:6 : Column "Genero" has no nominal values set: execute predecessor or add Binner.
+2023-06-19 19:01:26,819 : WARN  : KNIME-Worker-0-Missing Value 3:3 :  : Node : Missing Value : 3:3 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2023-06-19 19:01:26,926 : ERROR : KNIME-Worker-0-Excel Writer 3:8 :  : Node : Excel Writer : 3:8 : Execute failed: The directory 'C:\Users\ESCOM\Documents\KNIME' does not exist and must not be created due to user settings.
+java.io.IOException: The directory 'C:\Users\ESCOM\Documents\KNIME' does not exist and must not be created due to user settings.
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.createOutputFoldersIfMissing(ExcelTableWriterNodeModel.java:279)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.write(ExcelTableWriterNodeModel.java:188)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeModel.execute(ExcelTableWriterNodeModel.java:159)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-06-19 19:01:30,073 : ERROR : KNIME-Worker-2-Image Writer (Port) 3:7 :  : Node : Image Writer (Port) : 3:7 : Execute failed: The directory 'C:\Users\ESCOM\Documents\KNIME' does not exist and must not be created due to user settings.
+java.io.IOException: The directory 'C:\Users\ESCOM\Documents\KNIME' does not exist and must not be created due to user settings.
+	at org.knime.filehandling.core.node.portobject.writer.PortObjectToPathWriterNodeModel.execute(PortObjectToPathWriterNodeModel.java:93)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2023-06-19 21:06:09,200 : WARN  : ModalContext :  : Node : Excel Reader : 4:1 : The node configuration changed and the table spec will be recalculated during execution.

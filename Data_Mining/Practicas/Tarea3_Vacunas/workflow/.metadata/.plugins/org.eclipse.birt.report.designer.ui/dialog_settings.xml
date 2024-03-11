@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="Shell {Data Binding} [layout=GridLayout {numColumns=5 verticalSpacing=5}]/Shell {KNIME Analytics Platform} [layout=org.eclipse.e4.ui.workbench.renderers.swt.TrimmedPartLayout@437fbc52]">
+		<item key="DIALOG_X_ORIGIN" value="192"/>
+		<item key="DIALOG_Y_ORIGIN" value="123"/>
+		<item key="DIALOG_WIDTH" value="1168"/>
+		<item key="DIALOG_HEIGHT" value="446"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="Shell {Select Data Binding} [layout=GridLayout {numColumns=5 verticalSpacing=5}]/Shell {Edit Image Item} [layout=GridLayout {numColumns=5 verticalSpacing=5}]/Shell {KNIME Analytics Platform} [layout=org.eclipse.e4.ui.workbench.renderers.swt.TrimmedPartLayout@437fbc52]">
+		<item key="DIALOG_X_ORIGIN" value="-261"/>
+		<item key="DIALOG_Y_ORIGIN" value="6"/>
+		<item key="DIALOG_WIDTH" value="971"/>
+		<item key="DIALOG_HEIGHT" value="423"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
