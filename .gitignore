@@ -58,33 +58,33 @@ Computer_Networks/*.exe
 Computer_Networks/*.cpp
 
 Data_Mining/Practicas y Tareas/3-irisBIRT/*.txt
-Data_Mining/Practicas y Tareas/3-irisBIRT/workspace
+# Data_Mining/Practicas y Tareas/3-irisBIRT/workspace
 Data_Mining/Practicas y Tareas/4-ConsultasMuseos/*.rar
-Data_Mining/Practicas y Tareas/4-ConsultasMuseos/workspace
+#Data_Mining/Practicas y Tareas/4-ConsultasMuseos/workspace
 Data_Mining/Practicas y Tareas/4-Museos-p1/*.rar
-Data_Mining/Practicas y Tareas/4-Museos-p1/workspace
-Data_Mining/Practicas y Tareas/6-ArbolID3_Golf/*.pmml
-Data_Mining/Practicas y Tareas/6-ArbolID3_Golf/workflow
-Data_Mining/Practicas y Tareas/6-ArbolID3_Golf/workspace
-Data_Mining/Practicas y Tareas/7-ejArbol_C4.5-CART iris/workspace
+#Data_Mining/Practicas y Tareas/4-Museos-p1/workspace
+#Data_Mining/Practicas y Tareas/6-ArbolID3_Golf/*.pmml
+#Data_Mining/Practicas y Tareas/6-ArbolID3_Golf/workflow
+#Data_Mining/Practicas y Tareas/6-ArbolID3_Golf/workspace
+#Data_Mining/Practicas y Tareas/7-ejArbol_C4.5-CART iris/workspace
 Data_Mining/Practicas y Tareas/8-randomForest/.metadata
 Data_Mining/Practicas y Tareas/8-randomForest/Example Workflows
 Data_Mining/Practicas y Tareas/8-randomForest/PFinalEq8Clustering
-Data_Mining/Practicas y Tareas/8-randomForest/workflow
-Data_Mining/Practicas y Tareas/9-reglasAsoc/workflow
-Data_Mining/Practicas y Tareas/10-regreLineal/workflow
-Data_Mining/Practicas y Tareas/91-Museos_python/workflow
-Data_Mining/Practicas y Tareas/PROYECTO_FINAL/workflow
+#Data_Mining/Practicas y Tareas/8-randomForest/workflow
+#Data_Mining/Practicas y Tareas/9-reglasAsoc/workflow
+#Data_Mining/Practicas y Tareas/10-regreLineal/workflow
+#Data_Mining/Practicas y Tareas/91-Museos_python/workflow
+#Data_Mining/Practicas y Tareas/PROYECTO_FINAL/workflow
 Data_Mining/Practicas y Tareas/pruebaPythonScript
-Data_Mining/Practicas y Tareas/segmentacion/workflow
+#Data_Mining/Practicas y Tareas/segmentacion/workflow
 Data_Mining/Practicas y Tareas/Tarea3_Vacunas/*.rar
-Data_Mining/Practicas y Tareas/Tarea3_Vacunas/workflow
+#Data_Mining/Practicas y Tareas/Tarea3_Vacunas/workflow
 Data_Mining/Practicas y Tareas/Tarea4_reglasAsociacion/*.rar
-Data_Mining/Practicas y Tareas/Tarea4_reglasAsociacion/workflow
+#Data_Mining/Practicas y Tareas/Tarea4_reglasAsociacion/workflow
 Data_Mining/Practicas y Tareas/Tarea5_ArbolesClasificacion/*.rar
-Data_Mining/Practicas y Tareas/Tarea5_ArbolesClasificacion/workflow
+#Data_Mining/Practicas y Tareas/Tarea5_ArbolesClasificacion/workflow
 Data_Mining/Practicas y Tareas/Tarea7_RegresionLineal/*.rar
-Data_Mining/Practicas y Tareas/Tarea7_RegresionLineal/workflow
+#Data_Mining/Practicas y Tareas/Tarea7_RegresionLineal/workflow
 
 Development_of_Distributed_Systems/*.txt
 Development_of_Distributed_Systems/*.jar
