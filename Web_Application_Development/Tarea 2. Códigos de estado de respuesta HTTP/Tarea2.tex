@@ -1,0 +1,345 @@
+\documentclass[10pt,a4paper]{article} %#Establece el tipo de documento y sus especificaciones
+%##Lista de paquetes que se podrán usar en el documento
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[fleqn]{mathtools}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{nccmath}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{tasks}
+\usepackage{color}
+\usepackage{float}
+\usepackage[spanish]{babel}
+\UseRawInputEncoding
+\usepackage{colortbl} %## Permite añadir color a las filas y columnas de una tabla
+\usepackage{longtable} %## Permite el uso de tablas muy grandes
+\usepackage{float} %## Brinda mayor precision a los comandos de colocacion de las tablas
+
+\definecolor{colorIPN}{rgb}{0.5, 0.0,0.13}
+\definecolor{colorESCOM}{rgb}{0.0, 0.5,1.0}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0} %# Color para el encabezado de las tablas
+
+\begin{document} %##Indica donde inicia el documento
+%#########################################################
+\begin{titlepage}
+	\centering
+	{ \huge \bfseries \color{colorIPN}{Instituto Politécnico Nacional} \par}
+	{ \Large \bfseries  \color{colorESCOM}{Escuela Superior de C{\' o}mputo} \par }
+	\vspace{1cm}%##Inserta una separación de tamaño exacto entre líneas
+	{\huge\Large \color{colorIPN}{Web App Development}.\par}
+	\vspace{1.5cm}
+	{\huge\Large  \color{colorESCOM}{Tarea 2 : C{\' o}digos de estado de respuesta HTTP}\par}
+		\vspace{2cm}
+	{\Large\itshape \color{colorIPN}{Profesor: M. en C. Jos{\' e} Asunci{\' o}n Enr{\' i}quez Z{\' a}rate}\par} \hfill \break
+	\vspace{2cm}
+	{\Large\itshape \color{colorIPN}{Alumno: Mauro Sampayo Hern{\' a}ndez}\par} \hfill \break
+	{\Large\itshape \color{colorIPN}{mauro\_luigi@hotmail.com}\par} \hfill \break
+	{\Large\itshape \color{colorIPN}{3CM18} \par}
+	\vfill
+	{\large \color{colorIPN}{\today}\par} 
+	\vfill
+\end{titlepage}
+
+\renewcommand\lstlistingname{Quelltext} 
+
+\settasks{
+	counter-format=(tsk[r]),
+	label-width=4ex
+}
+\tableofcontents 
+\pagebreak
+
+\pagenumbering {arabic} %##Coloca el contador de páginas a 1 y comienza a numerar de acuerdo con el estilo especificado. En este caso dicho estilo de numeracion es el arabigo
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Introducci{\' o}n}}%##Crea secciones númeradas, en este caso esta es la seccion 1
+{\large Los c{\'o}digos de estado HTTP son mensajes que describen de forma abreviada la respuesta HTTP, e indican si se ha completado satisfactoriamente una solicitud HTTP espec{\'i}fica. Este tipo de mensajes se devuelven cada vez que un navegador interact{\'u}a con un servidor y son una herramienta invaluable para diagnosticar y arreglar errores de configuraci{\'o}n del sitio web.
+
+
+\vspace{0.5cm}
+El primer d{\'i}gito del c{\'o}digo de estado especifica uno de los 5 tipos de respuesta, el m{\'i}nimo para que un cliente pueda trabajar con HTTP es que reconozca estas 5 clases. La Internet Assigned Numbers Authority (IANA) mantiene el registro oficial de c{\'o}digos de estado HTTP.}
+
+%\subsection{ \color{colorESCOM}{Sub Sección 1}} %##Crea subsecciones numeradas
+%\lipsum[2-3] %##Añade tecto lorem ipsum
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Desarrollo}}
+
+\subsection{ \color{colorESCOM}{Clasificaci{\'o}n de los c{\'o}digos de respuesta del protocolo HTTP.}}
+{\large Los c{\'o}digos de estado HTTP se dividen en 5 clases:}
+
+\begin{itemize}
+	{\large
+	    \item \textbf{Respuestas informativas (100 -– 199):} C{\'o}digos informativos que indican que la solicitud iniciada por el navegador contin{\'u}a.
+	    \item \textbf{Respuestas satisfactorias (200 –- 299):} C{\'o}digos devueltos cuando la solicitud del navegador fue recibida, entendida y procesada por el servidor.
+	    \item \textbf{Redirecciones (300 –- 399):} C{\'o}digos de redireccionamiento devueltos cuando un nuevo recurso ha sido sustituido por el recurso solicitado.
+	    \item \textbf{Errores de los clientes (400 –- 499):} C{\'o}digos de error del cliente que indican que hubo un problema con la solicitud.-
+	    \item \textbf{Errores de los servidores (500 –- 599)} C{\'o}digos de error del servidor que indican que la solicitud fue aceptada, pero que un error en el servidor impidi{\'o} que se cumpliera.}
+\end{itemize}
+
+{\large Dentro de cada una de estas clases, existe una variedad de c{\'o}digos que pueden ser devueltos por el servidor. Cada c{\'o}digo individual tiene un significado espec{\'i}fico y {\'u}nico.}
+
+\subsection{\color{colorESCOM}{C{\'o}digos de respuesta del protocolo HTTP.}}
+
+\subsubsection{\color{colorESCOM}{Respuestas informativas (100 -– 199):}}
+
+\begin{table}[H]
+    \large 
+    \begin{center}
+        \begin{tabular}{ | c | c | p{10.5cm} | }
+            \hline
+            \rowcolor{amber}
+            \multicolumn{3}{|c|}{\textbf{Respuestas Informativas}} \\
+            \hline
+            \rowcolor{amber}
+            \textit{\textbf{C{\'o}digo}} & \textit{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textit{\textbf{Descripci{\'o}n}}} \\
+            \hline
+            
+            \textbf{100} & \textbf{Continue} & El servidor ha recibido los headers del request y el cliente deber{\'i}a proceder a enviar el cuerpo de la respuesta. \\
+            \hline
+            \textbf{101} & \textbf{Switching Protocol} & El requester ha solicitado al servidor conmutar protocolos. \\
+            \hline
+            \textbf{102} & \textbf{Processing} & Usado en requests para reanudar peticiones PUT o POST abortadas. \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\subsubsection{\color{colorESCOM}{Respuestas satisfactorias (200 –- 299):}}
+
+\begin{large}
+    \begin{longtable}[H]{ | c | c | p{8cm} |}
+            \hline
+            \rowcolor{amber}
+            \multicolumn{3}{|c|}{\textbf{Respuestas satisfactorias}} \\
+            \hline
+            \rowcolor{amber}
+            \textit{\textbf{C{\'o}digo}} & \textit{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textit{\textbf{Descripci{\'o}n}}} \\
+            \hline
+            \endhead
+            
+            \textbf{200} & \textbf{OK} & El request es correcto. Esta es la respuesta est{\'a}ndar para respuestas correctas. \\
+            \hline
+            \textbf{201} & \textbf{Created} & El request se ha completado y se ha creado un nuevo recurso. \\
+            \hline
+            \textbf{202} & \textbf{Accepted} & El request se ha aceptado para procesarlo, pero el proceso a{\'u}n no ha terminado. \\
+            \hline
+            \textbf{203} & \textbf{Non-Authoritative Information} & El request se ha procesado correctamente, pero devuelve informaci{\'o}n que podr{\'i}a venir de otra fuente. \\
+            \hline
+            \textbf{204} & \textbf{No Content} & El request se ha procesado correctamente, pero no devuelve ning{\'u}n contenido. \\
+            \hline
+            \textbf{205} & \textbf{Reset Content} & El request se ha procesado correctamente, pero no devuelve ning{\'u}n contenido y se requiere que el requester recargue el contenido. \\
+            \hline
+            \textbf{206} & \textbf{Partial Content} & El servidor devuelve s{\'o}lo parte del recurso debido a una limitaci{\'o}n que ha configurado el cliente (se usa en herramientas de descarga como wget). \\
+            \hline
+            \textbf{207} & \textbf{Multi-Status} & El cuerpo del mensaje es XML y puede contener un n{\'u}mero de c{\'o}digos de estado diferentes dependiendo del n{\'u}mero de sub-requests. \\
+            \hline
+            \textbf{226} & \textbf{IM Used} & El servidor ha cumplido una petici{\'o}n GET para el recurso y la respuesta es una representaci{\'o}n del resultado de una o m{\'a}s manipulaciones de instancia aplicadas a la instancia actual. \\
+            \hline
+    \end{longtable}
+\end{large}
+
+\subsubsection{\color{colorESCOM}{Redirecciones (300 –- 399):}}
+
+\begin{table}[H]
+    \large
+    \begin{center}
+        \begin{tabular}{ | c | c | p{10.5cm} |}
+            \hline
+            \rowcolor{amber}
+            \multicolumn{3}{|c|}{\textbf{Redirecciones}} \\
+            \hline
+            \rowcolor{amber}
+            \textit{\textbf{C{\'o}digo}} & \textit{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textit{\textbf{Descripci{\'o}n}}} \\
+            \hline
+            
+            \textbf{300} & \textbf{Multiple Choices} & Es una lista de enlaces. El usuario puede seleccionar un enlace e ir a esa direcci{\'o}n. Hay un m{\'a}ximo de cinco direcciones. \\
+            \hline
+            \textbf{301} & \textbf{Moved Permanently} & La p{\'a}gina solicitada se ha movido permanentemente a una nueva URI. \\
+            \hline
+            \textbf{302} & \textbf{Found} & La p{\'a}gina solicitada se ha movido temporalmente a una nueva URI. \\
+            \hline
+            \textbf{303} & \textbf{See Other} & La p{\'a}gina solicitada se puede encontrar en una URI diferente. \\
+            \hline
+            \textbf{304} & \textbf{Not Modified} & Indica que la p{\'a}gina solicitada no se ha modificado desde la {\'u}ltima petici{\'o}n. \\
+            \hline
+            \textbf{305} & \textbf{Use Proxy} &  El recurso solicitado s{\'o}lo est{\'a} disponible a trav{\'e}s de proxy, cuya direcci{\'o}n se proporciona en la respuesta. Muchos clientes HTTP como Mozilla o Internet Explorer no manejan bien estas respuestas con estos c{\'o}digos de estado, sobre todo por seguridad.\\
+            \hline
+            \textbf{307} & \textbf{Temporary Redirect} & La p{\'a}gina solicitada se ha movido temporalmente a otra URL. \\
+            \hline
+            \textbf{308} & \textbf{Permanent Redirect} & El request y futuros requests deber{\'i}an repetirse usando otro URI \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\pagebreak
+\subsubsection{\color{colorESCOM}{Errores de los clientes (400 –- 499):}}
+
+\begin{large}
+    \begin{longtable}[H]{ | c | c | p{8cm} |}
+        \hline
+        \rowcolor{amber}
+        \multicolumn{3}{|c|}{\textbf{Errores de los Clientes}} \\
+        
+        \hline
+        \rowcolor{amber}
+        \textit{\textbf{C{\'o}digo}} & \textit{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textit{\textbf{Descripci{\'o}n}}} \\
+        \hline
+        \endhead
+        
+        \textbf{400} & \textbf{Bad Request} & El servidor no puede o no va a procesar el request por un error de sintaxis del cliente. \\
+        \hline
+        \textbf{401} & \textbf{Unauthorized} &  Es devuelto por el servidor cuando el recurso de destino carece de credenciales de autenticaci{\'o}n v{\'a}lidas. \\
+        \hline
+        \textbf{402} & \textbf{Payment Required} & Originalmente, este c{\'o}digo fue creado para ser usado como parte de un sistema de dinero digital. Sin embargo, ese plan nunca se llev{\'o} a cabo y estpa reservado para futuro uso. Sin embargo es utilizado por diversas plataformas para indicar que una solicitud no se puede cumplir, por lo general debido a la falta de los fondos necesarios.  \\
+        \hline
+        \textbf{403} & \textbf{Forbidden} & El request fue v{\'a}lido pero el servidor se niega a responder, debido a que el usuario intenta acceder a algo a que no tiene permiso para ver. \\
+        \hline
+        \textbf{404} & \textbf{Not Found} & El recurso del request no se ha podido encontrar. \\
+        \hline
+        \textbf{405} & \textbf{Method Not Allowed} &  Se ha hecho un request con un recurso usando un m{\'e}todo request no soportado por ese recurso (por ejemplo usando GET en un formulario que requiere POST). \\
+        \hline
+        \textbf{406} & \textbf{Not Acceptable} & El recurso solicitado solo genera contenido no aceptado de acuerdo con los headers Accept enviados en el request. \\
+        \hline
+        \textbf{407} & \textbf{Proxy Authentication Required} & El cliente se debe identificar primero con el proxy. \\
+        \hline
+        \textbf{408} & \textbf{Request Timeout} & l cliente no ha enviado un request con el tiempo necesario con el que el servidor estaba preparado para esperar. \\
+        \hline
+        \textbf{409} & \textbf{Conflict} & El servidor no pudo procesar la solicitud de su navegador porque hay un conflicto con el recurso correspondiente.  \\
+        \hline
+        \textbf{410} & \textbf{Gone} & El recurso solicitado no est{\'a} disponible ni lo estar{\'a} en el futuro. \\
+        \hline
+        \textbf{411} & \textbf{Length Required} & El request no especific{\'o} la longitud del contenido, la cual es requerida por el recurso solicitado. \\
+        \hline
+        \textbf{412} & \textbf{Precondition Failed} & El servidor no cumple una de las precondiciones que el requester a{\~ n}ade en el request. \\
+        \hline
+        \textbf{413} & \textbf{Request Entity Too Large} & El request es m{\'a}s largo que el que est{\'a} dispuesto a aceptar el servidor. \\
+        \hline
+        \textbf{414} & \textbf{Request-URI Too Long} & El URI es muy largo para que el servidor lo procese. \\
+        \hline
+        \textbf{415} & \textbf{Unsupported Media Type} & La entidad request tiene un media type que el servidor o recurso no soportan. \\
+        \hline
+        \textbf{416} & \textbf{Requested Range Not Satisfiable} & La solicitud fue por una porci{\'o}n de un recurso que el servidor no puede devolver. \\
+        \hline
+        \textbf{417} & \textbf{Expectation Failed} &El servidor no puede cumplir los requisitos especificados en el campo de cabecera de la solicitud. \\
+        \hline
+        \textbf{418} & \textbf{I'm a teapot} & Fue parte de un April Fool's day, y no se espera que se implemente en servidores HTTP. La RFC especifica que este c{\'o}digo deber{\'i}a ser devuelto por teteras para servir t{\'e}. \\
+        \hline
+        \textbf{421} & \textbf{Misdirected Request} & La petici{\'o}n fue dirigida a un servidor que no es capaz de producir una respuesta. Esto puede ser enviado por un servidor que no est{\'a} configurado para producir respuestas por la combinaci{\'o}n del esquema y la autoridad que est{\'a}n incluidos en la URI solicitada. \\
+        \hline
+        \textbf{422} & \textbf{Unprocessable Entity} & La petici{\'o}n estaba bien formada pero no se pudo seguir debido a errores de sem{\'a}ntica. \\
+        \hline
+        \textbf{423} & \textbf{Locked} & El recurso que est{\'a} siendo accedido est{\'a} bloqueado. \\
+        \hline
+        \textbf{424} & \textbf{Failed Dependency} & La petici{\'o}n fall{\'o} debido a una falla de una petici{\'o}n previa. \\
+        \hline
+        \textbf{426} & \textbf{Upgrade Required} & El servidor se reh{\'u}sa a aplicar la solicitud usando el protocolo actual pero puede estar dispuesto a hacerlo despu{\'e}s que el cliente se actualice a un protocolo diferente. El servidor env{\'i}a un encabezado Upgrade en una respuesta para indicar los protocolos requeridos. \\
+        \hline
+        \textbf{428} & \textbf{Precondition Required} & El servidor origen requiere que la solicitud sea condicional. \\
+        \hline
+        \textbf{429} & \textbf{Too Many Requests} & El usuario ha enviado demasiadas solicitudes en un periodo de tiempo dado. \\
+        \hline
+        \textbf{431} & \textbf{Request Header Fields Too Large} & El servidor no est{\'a} dispuesto a procesar la solicitud porque los campos de encabezado son demasiado largos. \\
+        \hline
+        \textbf{451} & \textbf{Unavailable For Legal Reasons} & El usuario solicita un recurso ilegal, como alguna p{\'a}gina web censurada por alg{\'u}n gobierno. \\
+        \hline
+    \end{longtable}
+\end{large}
+
+\subsubsection{\color{colorESCOM}{Errores de los servidores (500 –- 599):}}
+
+\begin{table}[H]
+    \large
+    \begin{center}
+        \begin{tabular}{| c | c | p{8cm} |}
+            \hline
+            \rowcolor{amber}
+            \multicolumn{3}{|c|}{\textbf{Errores del Servidor}} \\
+            \hline
+            \rowcolor{amber}
+            \textit{\textbf{C{\'o}digo}} & \textit{\textbf{Nombre}} & \multicolumn{1}{|c|}{\textit{\textbf{Descripci{\'o}n}}} \\
+            \hline
+            
+            \textbf{500} & \textbf{Internal Server Error} & Error gen{\'e}rico, cuando se ha dado una condici{\'o}n no esperada y no se puede concretar el mensaje. \\
+            \hline
+            \textbf{501} & \textbf{Not Implemented} & El servidor o no reconoce el m{\'e}todo del request o carece de la capacidad para completarlo. \\
+            \hline
+            \textbf{502} & \textbf{Bad Gateway} & El server actuaba como puerta de entrada o proxy y recibi{\'o} una respuesta inv{\'a}lida del servidor upstream. \\
+            \hline
+            \textbf{503} & \textbf{Service Unavailable} & El servidor est{\'a} actualmente no disponible, ya sea por mantenimiento o por sobrecarga. \\
+            \hline
+            \textbf{504} & \textbf{Gateway Timeout} & El servidor estaba actuando como puerta de entrada o proxy y no recibi{\'o} una respuesta oportuna por parte del servidor upstream. \\
+            \hline
+            \textbf{505} & \textbf{HTTP Version Not Supported} &  El servidor no soporta la versi{\'o}n del protocolo HTTP usada en el request. \\
+            \hline
+            \textbf{506} & \textbf{Variant Also Negotiates} & El servidor tiene un error de configuraci{\'o}n interna(negociaci{\'o}n de contenido transparente para la petici{\'o}n resulta en una referencia circular). \\
+            \hline
+            \textbf{507} & \textbf{Insufficient Storage} & El servidor tiene un error de configuraci{\'o}n interna(a variable de recurso escogida est{\'a} configurada para acoplar la negociaci{\'o}n de contenido transparente misma, y no es por lo tanto un punto final adecuado para el proceso de negociaci{\'o}n). \\
+            \hline
+            \textbf{508} & \textbf{Loop Detected} & El servidor detect{\'o} un ciclo infinito mientras procesaba la solicitud. \\
+            \hline
+            \textbf{510} & \textbf{Not Extended} & Extensiones adicionales para la solicitud son requeridas para que el servidor las cumpla. \\
+            \hline
+            \textbf{511} & \textbf{Network Authentication Required} & El cliente necesita autentificarse para poder acceder a la red. \\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\pagebreak
+
+%################################################
+
+\section{\color{colorIPN}{Conclusi{\' o}n}}
+{\large A partir del uso de los c{\' o}digos de estado de respuesta que provee HTTP, se puede tener un conocimiento amplio acerca de como se comporta una aplicaci{\' o}n Web cuando recibe peticiones por parte de uno o m{\' a}s clientes, de tal manera que se puede identificar si la aplicaci{\' o}n esta brindando respuestas adecuadas, y en caso contrario saber  si se trata de un error por parte del cliente o del servidor y conocer m{\' a}s a detalle que est{\' a} causando dicho error durante el proceso de intercambio de informaci{\' o}n entre el servidor y el cliente para su posterior correcci{\' o}n.
+
+
+\vspace{0.5cm}
+Para lo {\' u}ltimo mencionado los c{\' o}digos del 400-499 (Errores del cliente) y del 500-599 (Errores del servidor) son de bastante utilidad para identificar dichos errores de manera espec{\' i}fica, as{\' i} como tambi{\' e}n los m{\' a}s comunes de aparecer, pues incluso se pueden encontrar en el d{\' i}a a d{\' i}a al navegar por internet, existe la posibilidad de que cuando se acceda a una p{\' a}gina Web haya alg{\' u}n error que nos muestre alg{\' u}n c{\' o}digo perteneciente a los rangos anteriormente mencionados.}
+
+\color{colorIPN}{
+	\begin{flushright}
+		\textit{
+			Mauro Sampayo Hern{\' a}ndez
+		}
+	\end{flushright} \hfill \break
+}
+
+\pagebreak
+
+%################################################
+
+\section{\color{colorIPN}{Referencias Bibliogr{\' a}ficas}}
+\color{colorESCOM}{
+	\begin{thebibliography}{10}
+		\bibitem {codigosHTTP1}
+		\newblock {\em C{\' o}digos de estado de respuesta HTTP}
+		\newblock \textbf{MDN Web Docs}
+		\newblock [accesed 2021 Oct 27]
+		\newblock {\em https://developer.mozilla.org/es/docs/Web/HTTP/Status}
+	
+		\bibitem {codigosHTTP2}
+		Diego L{\' a}zaro.
+		\newblock {\em C{\' o}digos de estado HTTP}
+		\newblock \textbf {2018}
+		\newblock [accesed 2021 Oct 27]
+		\newblock {\em https://diego.com.es/codigos-de-estado-http}
+	
+		\bibitem {codigosHTTP3}
+		Jon Penland.
+		\newblock {\em Una gu{\' i}a completa y una lista de c{\' o}digos de estado HTTP}
+		\newblock \textbf {KINSTA, 2021}
+		\newblock [accesed 2021 Oct 27]
+		\newblock {\em https://kinsta.com/es/blog/codigos-de-estado-de-http/}
+	\end{thebibliography}
+}
+
+\end{document} %##Indica donde termina el documento

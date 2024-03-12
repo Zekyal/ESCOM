@@ -1,0 +1,223 @@
+\documentclass[10pt,a4paper]{article} %#Establece el tipo de documento y sus especificaciones
+%##Lista de paquetes que se podrán usar en el documento
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[fleqn]{mathtools}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{nccmath}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{tasks}
+\usepackage{color}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage[spanish]{babel}
+\UseRawInputEncoding
+
+\definecolor{colorIPN}{rgb}{0.5, 0.0,0.13}
+\definecolor{colorESCOM}{rgb}{0.0, 0.5,1.0}
+
+\begin{document} %##Indica donde inicia el documento
+%#########################################################
+\begin{titlepage}
+	\centering
+	{ \huge \bfseries \color{colorIPN}{Instituto Politécnico Nacional} \par}
+	{ \Large \bfseries  \color{colorESCOM}{Escuela Superior de C{\' o}mputo} \par }
+	\vspace{1cm}%##Inserta una separación de tamaño exacto entre líneas
+	{\huge\Large \color{colorIPN}{Web App Development}.\par}
+	\vspace{1.5cm}
+	{\huge\Large  \color{colorESCOM}{Tarea 3 : Documentar L{\' i}nea a L{\' i}nea ClaseSimple.java}\par}
+		\vspace{2cm}
+	{\Large\itshape \color{colorIPN}{Profesor: M. en C. Jos{\' e} Asunci{\' o}n Enr{\' i}quez Z{\' a}rate}\par} \hfill \break
+	\vspace{2cm}
+	{\Large\itshape \color{colorIPN}{Alumno: Mauro Sampayo Hern{\' a}ndez}\par} \hfill \break
+	{\Large\itshape \color{colorIPN}{mauro\_luigi@hotmail.com}\par} \hfill \break
+	{\Large\itshape \color{colorIPN}{3CM18} \par}
+	\vfill
+	{\large \color{colorIPN}{\today}\par} 
+	\vfill
+\end{titlepage}
+
+\renewcommand\lstlistingname{Quelltext} 
+
+\lstset{ 
+	language=Java,
+	basicstyle=\small\sffamily,
+	numbers=left,
+	numberstyle=\tiny,
+	frame=tb,
+	tabsize=4,
+	columns=fixed,
+	showstringspaces=false,
+	showtabs=false,
+	keepspaces,
+	commentstyle=\color{Violet},
+	keywordstyle=\color{colorIPN} \bfseries,
+	stringstyle=\color{colorESCOM}
+}
+
+\settasks{
+	counter-format=(tsk[r]),
+	label-width=4ex
+}
+\tableofcontents 
+\pagebreak
+
+\pagenumbering {arabic} %##Coloca el contador de páginas a 1 y comienza a numerar de acuerdo con el estilo especificado. En este caso dicho estilo de numeracion es el arabigo
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Introducci{\' o}n}}%##Crea secciones númeradas, en este caso esta es la seccion 1
+{\large Por lo general cuando se realiza la programaci{\' o}n de aplicaciones Web por medio del uso de Servlets, resulta necesario el uso de sesiones de usuario, las cuales representan una colecci{\' o}n de objetos que un cliente especifico utiliza durante el uso de dicha aplicaci{\' o}n Web. De esto surge la necesidad de poder administrar cada una de las sesiones de usuario que sean creadas dentro de la aplicaci{\' o}n.
+
+
+\vspace{0.5cm}
+En el desarrollo de este documento se mostrar{\' a} una clase de ejemplo que contiene 3 m{\' e}todos que hacen uso del objeto HttpSession, que se encarga de la administraci{\' o}n de sesiones de usuario dentro de un Servlet, as{\' i} como tambi{\' e}n de m{\' e}todos y algoritmos relacionados a dicho objeto que resultan muy {\' u}tiles al momento de realizar tareas tales como la de crear e inicializar sesiones de usuario, y comprobar, eliminar y acceder a los valores contenidos dentro de los atributos almacenados en dichas sesiones.}
+
+%\subsection{ \color{colorESCOM}{Sub Sección 1}} %##Crea subsecciones numeradas
+%\lipsum[2-3] %##Añade tecto lorem ipsum
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Desarrollo}}
+{\large A continuac{\'o}n se mostrar{\'a} el c{\' o}digo de la clase ``ClaseSimple.java'' propuesto por el profesor, debidamente documentado:
+\vspace{0.5cm}}
+
+\begin{lstlisting}
+    // Define una clase publica llamada ``ClaseSimple''
+	public class ClaseSimple{
+	    
+	    /*  Define el metodo ``metodoUno” que recibe como parametros un request (datos
+    	    encapsulados de la solicitud de un cliente) y un response (datos encapsulados
+	        de respuesta a la solicitud del cliente).   */
+        /*  Este metodo realiza la creacion o recuperacion de una sesion de usuario 
+            y le asigna valores */
+	    public void metodoUno(HttpServletRequest request, HttpServletResponse response){
+	        /*  Se inicializa un objeto HttpSession para poder almacenar la informacion de 
+	            la sesion de usuario que va a controlar el servlet, y se inicializa con la 
+	            recuperacion de la sesion del request que se reciba por parte del usuario, 
+	            y en caso de que esta no exista se creara   */
+	        HttpSession session = request.getSession(true);
+	        /*  Se realiza el almacenamiento de los atributos ``nombre'' y ``valor'' dentro 
+	            de la sesión actual */
+	        session.setAttribute("nombre", "valor");
+	    } // Fin de ``metodoUno''
+	    
+	    /*  Define el metodo ``metodoDos'' que recibe como parametros un request (datos
+    	    encapsulados de la solicitud de un cliente) y un response (datos encapsulados
+	        de respuesta a la solicitud del cliente).   */
+	    /*  Este metodo realiza lla eliminacion del atributo ``nombre'' dentro de una 
+	        sesion, y en caso de que esta falle se eliminara la sesion. */
+	    public void metodoDos(HttpServletRequest request, HttpServletResponse response){
+	        /*  Se inicializa un objeto HttpSession para poder almacenar la informacion de 
+	            la sesion de usuario que va a controlar el servlet, y se inicializa con la 
+	            recuperacion de la sesion del request que se reciba por parte del usuario, 
+	            y en caso de que esta no exista se creara   */
+	        HttpSession session = request.getSession(true);
+	        //  Se elimina el atributo ``nombre'' dentro de la sesion de usuario actual 
+	        session.removeAttribute("nombre");
+	        /*  Se utiliza el metodo getAttribute para obtener la informacion guardada en el
+	            atributo “nombre” de la sesion actual, y en caso de que el valor devuelto 
+	            por el metodo no sea igual a nulo (lo cual significa que el metodo utilizado 
+	            para la eliminacion el atributo ``nombre'' en la linea anterior fallo de 
+	            alguna manera):    */
+	        if(session.getAttribute("nombre") != null){
+	            //  Se elimina la sesion en su totalidad
+	            session.invalidate
+	        } // Fin if
+	    } // Fin de ``metodoDos''
+	    
+	    /*  Define el metodo ``metodoTres'' que recibe como parametros un request (datos
+    	    encapsulados de la solicitud de un cliente) y un response (datos encapsulados
+	        de respuesta a la solicitud del cliente).   */
+	    /*  Este metodo comprueba si una sesion de usuario existe o no, y en caso de que 
+	        exista comprueba si cuenta con el atributo ``nombre'' */
+	    public boolean metodoTres(HttpServletRequest request, HttpServletResponse response){
+	        /*  Se inicializa un objeto HttpSession para poder almacenar la informacion de 
+	            la sesion de usuario que va a controlar el servlet, y se inicializa con la 
+	            recuperacion de la sesion del request que se reciba por parte del usuario,
+	            y en caso de que esta no exista el valor de la sesion sera ``null''   */
+	        HttpSession session = request.getSession(false);
+	        // En caso de que la sesion sea igual a ``null'':
+	        if(session == null){
+	            // Se retorna un valor booleano ``FALSE''
+	            return false;
+	        // En caso contrario (el valor de la sesion es igual a algo diferente de ``null''):
+	        } else {
+                /*  Se retorna el valor booleano resultante de comprobar que el atributo 
+                    ``nombre'' dentro de la sesion actual exista. En caso de que exista 
+                    retornara el valor booleano ``TRUE'', y en caso contrario retornara 
+                    el valor booleano ``FALSE''.  */
+	            return session.getAttribute("nombre") != null;
+	        } // Fin if-else
+	    } // Fin de ``metodoTres''
+	}
+\end{lstlisting} 
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Conclusi{\' o}n}}
+{\large Los m{\' e}todos y algoritmos presentados en el c{\' o}digo propuesto por el profesor nos demuestran la importancia de llevar a cabo la administraci{\' o}n de sesiones de usuario en aplicaciones Web, para que de esta manera cada request realizado por cada uno de los usuarios que est{\' e}n haciendo uso de la aplicaci{\' o}n sea administrado de manera correcta por esta y pueda crear respuestas acordes con cada solicitud que reciba. 
+
+
+\vspace{0.5cm}
+As{\' i} mismo, a trav{\' e}s de este ejercicio se lleg{\' o} a la conclusi{\' o}n de que uno de los errores m{\' a}s t{\' i}picos  que cometen los programadores durante el desarrollo de aplicaciones Web es, que se suele obviar el funcionamiento de cada una de las l{\' i}neas de c{\' o}digo que conforman a la aplicaci{\' o}n, cosa que puede llegar a afectar a largo plazo el desarrollo de la aplicaci{\' o}n, pues alguna l{\' i}nea de c{\' o}digo cuyo funcionamiento no entendamos del todo podr{\' i}a hacer que la aplicaci{\' o}n en cuesti{\' o}n no realice los procedimientos que se quieran realizar durante la ejecuci{\' o}n de alg{\' u}n m{\' e}todo de esta, de manera correcta. 
+
+
+\vspace{0.5cm}
+De la misma manera, y ligado a lo anteriormente mencionado, otro error com{\' u}n es el de no investigar acerca del funcionamiento de los m{\' e}todos que se quieren implementar, lo cual puede conllevar a que el comportamiento de la aplicaci{\' o}n que se est{\' e} desarrollando sea err{\' o}neo, pues tomando como ejemplo el m{\' e}todo ``getSession'' ; si no se conoce la diferencia entre que hace el m{\' e}todo cuando recibe como par{\' a}metro TRUE y cuando recibe como par{\' a}metro FALSE, se podr{\' i}an generar errores al momento de inicializar una sesi{\' o}n de usuario, pues en caso de que est{\' a} no exista al momento de realizar su inicializaci{\' o}n y por consiguiente se quiera realizar la creaci{\' o}n de la misma para su correcta inicializaci{\' o}n, poner el par{\' a}metro incorrecto (que para este caso ser{\' i}a FALSE) resultar{\' i}a en que esto {\' u}ltimo nunca sucediese y por lo tanto la aplicaci{\' o}n se comporte de manera incorrecta.}
+
+\color{colorIPN}{
+	\begin{flushright}
+		\textit{
+			Mauro Sampayo Hern{\' a}ndez
+		}
+	\end{flushright} \hfill \break
+}
+
+\pagebreak
+
+%################################################
+
+\section{\color{colorIPN}{Referencias Bibliogr{\' a}ficas}}
+\color{colorESCOM}{
+	\begin{thebibliography}{10}
+		\bibitem {reference1}
+		Chaitanya Singh.
+		\newblock {\em HttpSession with example in Servlet}
+		\newblock \textbf {BegginersBook}
+		\newblock [accesed 2021 Oct 27]
+		\newblock {\em https://beginnersbook.com/2013/05/http-session/}
+	
+		\bibitem {reference2}
+		\newblock {\em Difference Between request.getSession() and request.getSession(true)}
+		\newblock \textbf {Baeldung, 2020}
+		\newblock [accesed 2021 Sep 19]
+		\newblock {\em https://www.baeldung.com/java-request-getsession}
+	
+		\bibitem {reference3}
+		\newblock {\em Element.getAttribute()}
+		\newblock \textbf {MDN Web Docs}
+		\newblock [accesed 2021 Sep 19]
+		\newblock {\em https://developer.mozilla.org/es/docs/Web/API/Element/getAttribute}
+		
+		\bibitem {reference4}
+		\newblock {\em Servlets (B{\'a}sico)}
+		\newblock \textbf {Programacion.net}
+		\newblock [accesed 2021 Sep 19]
+		\newblock {\em https://programacion.net/articulo/servlets\_basico\_108/6}
+		
+		\bibitem {reference5}
+		\newblock {\em Java™ Platform, Standard Edition 7 API Specification}
+		\newblock \textbf {Oracle}
+		\newblock [accesed 2021 Sep 19]
+		\newblock {\em https://docs.oracle.com/javase/7/docs/api/}
+	\end{thebibliography}
+}
+
+\end{document} %##Indica donde termina el documento

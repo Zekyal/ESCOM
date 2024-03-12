@@ -1,0 +1,109 @@
+\documentclass[titlepage, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+	\centering
+	{\scshape\LARGE Escuela Superior de Cómputo. \par}
+	\vspace{1cm}
+	
+	\includegraphics[width=0.4\textwidth]{escom.png}\par\vspace{1cm}
+	
+	{\scshape\Large Web Application Development.\par}
+	\vspace{1cm}
+	
+	{\Large\bfseries ``1er Avance Proyecto Final "\par}
+	\vspace{1cm}
+	
+    {\Large\itshape Integrantes:  \\ Guadarrama Ascencio Juan Carlos. \\ Ornelas García Luis Ángel. \\ Sampayo Hernández Mauro. \par}
+	\vspace{1cm}
+	
+	\vfill
+	Profesor:\par
+	Enrique Zarate M. en C. José Asunción.
+	\vfill
+	
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+\section{Introducción:}
+
+Nuestro proyecto consiste en una aplicación web para el manejo de una base de datos de un banco. En nuestro modelo entidad relación podemos contemplar los débitos y créditos de cada cliente, además de la sucursal en dónde se encuentra registrado el mismo. Consideramos que cada cliente puede tener varias cuentas y préstamos en la misma o en diferentes sucursales. \par\vspace{0.5cm}
+
+Nuestra aplicación contemplará el uso de servlets para dar más dinamismo a la hora de usarla.
+
+\section{Modelo Entidad-Relación:}
+
+    \begin{figure}[h]
+    \caption{Modelo E-R.}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Modelo E-R.png} \par\vspace{0.5cm}
+    \end{figure}
+
+\section{Diccionario de Datos:}
+
+En esta sección mostraremos el diccionario de datos de nuestro proyecto.
+
+    \clearpage
+
+    \begin{figure}[h]
+    \caption{Diccionario de datos: Cliente}
+    \centering
+    \includegraphics[width=0.8\textwidth]{DD cliente.png} \par\vspace{0.5cm}
+    \end{figure}
+    
+    \begin{figure}[h]
+    \caption{Diccionario de datos: ctacliente}
+    \centering
+    \includegraphics[width=0.8\textwidth]{DD ctacliente.png} \par\vspace{0.5cm}
+    \end{figure}
+    
+    \clearpage
+    
+    \begin{figure}[h]
+    \caption{Diccionario de datos: Prestatario}
+    \centering
+    \includegraphics[width=0.8\textwidth]{DD prestatario.png} \par\vspace{0.5cm}
+    \end{figure}
+    
+    \begin{figure}[h]
+    \caption{Diccionario de datos: Cuenta}
+    \centering
+    \includegraphics[width=0.8\textwidth]{DD cuenta.png} \par\vspace{0.5cm}
+    \end{figure}
+    
+    \clearpage
+    
+    \begin{figure}[h]
+    \caption{Diccionario de datos: Préstamo}
+    \centering
+    \includegraphics[width=0.8\textwidth]{DD prestamo.png} \par\vspace{0.5cm}
+    \end{figure}
+    
+    \begin{figure}[h]
+    \caption{Diccionario de datos: Sucursal}
+    \centering
+    \includegraphics[width=0.8\textwidth]{DD sucursal.png} \par\vspace{0.5cm}
+    \end{figure}
+
+\section{Referencias bibliográficas:}
+
+[1] Data Dictionaries. 19 de septiembre del 2021, de javatpoint Sitio web: https://www.javatpoint.com/software-engineering-data-dictionaries \par\vspace{0.5cm}
+
+[2] Manually creating a data dictionary. 19 de septiembre del 2021, de U.S. DEPARTMENT OF AGRICULTURE Sitio web: https://data.nal.usda.gov/manually-creating-data-dictionary
+
+\end{document}

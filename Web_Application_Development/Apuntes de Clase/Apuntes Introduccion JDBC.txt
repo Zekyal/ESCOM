@@ -1,0 +1,14 @@
+JDBC -> Es aquella API que nos va a permitir inyterecatuar contra una base de datos.
+javax.sql -> Se usa mas que nada para cuando se quieren realizar pool de conexiones
+
+-> El conjunto de resultados o ResultSet almacena la ejecución de una consulta de una BD
+y puede regresar o no un conjunto de resultados
+-> Culaquier consulta que involucre una clausula SELECT es una consulta de selección
+-> Culaquier consulta que involucre una clausula INSERT es una consulta de actualización
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+-> PreparedStatement : Permiten tener un plan de ejecución de la consulta y parametrizar la consulta

@@ -1,0 +1,9 @@
+Liga para la aplicación web:
+
+Integrantes:
+Guadarrama Ascencio Juan Carlos.
+Ornelas García Luís Ángel.
+Sampayo Hernández Mauro.
+
+https://practica1-wad-jlm.herokuapp.com/
+

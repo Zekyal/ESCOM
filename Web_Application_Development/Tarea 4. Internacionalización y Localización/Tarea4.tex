@@ -1,0 +1,127 @@
+\documentclass[10pt,a4paper]{article} %#Establece el tipo de documento y sus especificaciones
+%##Lista de paquetes que se podrán usar en el documento
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[fleqn]{mathtools}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{nccmath}
+\usepackage{multicol}
+\usepackage{tasks}
+\usepackage{color}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage[spanish]{babel}
+\UseRawInputEncoding
+
+\definecolor{colorIPN}{rgb}{0.5, 0.0,0.13}
+\definecolor{colorESCOM}{rgb}{0.0, 0.5,1.0}
+
+\begin{document} %##Indica donde inicia el documento
+%#########################################################
+\begin{titlepage}
+	\centering
+	{ \huge \bfseries \color{colorIPN}{Instituto Polit{\' e}cnico Nacional} \par}
+	{ \Large \bfseries  \color{colorESCOM}{Escuela Superior de C{\' o}mputo} \par }
+	\vspace{1cm}%##Inserta una separación de tamaño exacto entre líneas
+	{\huge\Large \color{colorIPN}{Web App Development}.\par}
+	\vspace{1.5cm}
+	{\huge\Large  \color{colorESCOM}{Tarea 4 : Internacionalizac{\' o}n y Localizac{\' o}n}\par}
+		\vspace{2cm}
+	{\Large\itshape \color{colorIPN}{Profesor: M. en C. Jos{\' e} Asunci{\' o}n Enr{\' i}quez Z{\' a}rate}\par} \hfill \break
+	\vspace{2cm}
+	{\Large\itshape \color{colorIPN}{Alumno: Mauro Sampayo Hern{\' a}ndez}\par} \hfill \break
+	{\Large\itshape \color{colorIPN}{mauro\_luigi@hotmail.com}\par} \hfill \break
+	{\Large\itshape \color{colorIPN}{3CM18} \par}
+	\vfill
+	{\large \color{colorIPN}{4 de enero de 2022}\par} 
+	\vfill
+\end{titlepage}
+
+\settasks{
+	label=(tsk[r]),
+	label-width=4ex
+}
+\tableofcontents 
+\pagebreak
+
+\pagenumbering {arabic} %##Coloca el contador de páginas a 1 y comienza a numerar de acuerdo con el estilo especificado. En este caso dicho estilo de numeracion es el arabigo
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Introducci{\' o}n}}%##Crea secciones númeradas, en este caso esta es la seccion 1
+{\large Hist{\' o}ricamente los softwares que fuesen desarrollados originalmente solo estaban disponibles en ingl{\' e}s. y, seg{\' u}n fuera necesario, el autor de dichos softwares realizaba la labor de traducir sus interfaces y la documentaci{\' o}n del software en cuesti{\' o}n a las versiones de idiomas en diferentes pa{\' i}ses y regiones.   
+
+
+\vspace{0.5cm}
+Sin embargo, debido a las diferencias en las formas de lograr la traducci{\' o}n, la eficiencia del trabajo de traducci{\' o}n y la reutilizaci{\' o}n de la traducci{\' o}n, el trabajo de traducci{\' o}n enfrenta grandes dificultades. Dichas dificultades han llevado a la aparici{\' o}n de mecanismos que se encargan de realizar dicha traducci{\' o}n con el objetivo de lograr   un buen soporte de alg{\' u}n idioma en particular dentro de cualquier tipo de software. 
+
+
+\vspace{0.5cm}
+En este documento se abarcar{\' a}n los mecanismos i18n y l10n, los cuales se encargan de implementar traducciones a otros idiomas dentro de un software.}
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Desarrollo}}
+
+\subsection{\color{colorESCOM}{I18n}}
+{\large Al I18N es una forma abreviada de internacionalizaci{\' o}n, cuyo significado es que existen 18 letras entre i y n, que significa ``internacionalizaci{\' o}n'' del software.
+
+
+\vspace{0.5cm}
+Este mecanismo se encarga de la traducci{\' o}n de un software a diferentes versiones de idiomas, por medio de un conjunto de especificaciones de traducci{\' o}n y herramientas generales, y de esta manera adaptar dicho software para que su c{\' o}digo no realice suposiciones basadas en un solo idioma.
+}
+
+%####################################################################
+\subsection{\color{colorESCOM}{L10n}}
+{\large L10N es una forma abreviada de localizaci{\' o}n, cuyo significado es que existen 10 letras entre l y n, que significa ``localizaci{\' o}n'' del software.
+
+
+\vspace{0.5cm}
+Debido a que pueden existir m{\' u}ltiples ramas de un mismo idioma en diferentes pa{\' i}ses y regiones (tienen diferentes h{\' a}bitos de expresi{\' o}n, estructuras gramaticales e incluso el tipo y la codificaci{\' o}n de los dialectos), es que la traducci{\' o}n por s{\' i} sola se hace insuficiente. De esta manera es que surge el mecanismo de ``localizaci{\' o}n'', la cu{\' a}l es un complemento y mejora de la ``internacionalizaci{\' o}n'', e incluye ajustes de traducci{\' o}n espec{\' i}ficos para abarcar dichos dialectos que puedan presentarse como parte de un idioma en espec{\' i}fico.}
+
+\pagebreak
+
+%################################################
+\section{\color{colorIPN}{Conclusi{\' o}n}}
+{\large Los mecanismos de internacionalizaci{\' o}n y localizaci{\' o}n (i18n y l10n respectivamente) son de gran utilidad durante el desarrollo de software, al proporcionar herramientas estandarizadas para poder traducir la interfaz y documentaci{\' o}n de los softwares que desarrollemos a diferentes idiomas del mundo, tomando en cuenta los m{\' u}ltiples dialectos que existan en varias regiones del planeta; y de esta manera poder llevar a gente de todo el mundo las aplicaciones que desarrollemos.}
+
+\color{colorIPN}{
+	\begin{flushright}
+		\textit{
+			Mauro Sampayo Hern{\' a}ndez
+		}
+	\end{flushright} \hfill \break
+}
+
+\pagebreak
+
+%################################################
+
+\section{\color{colorIPN}{Referencias Bibliogr{\' a}ficas}}
+\color{colorESCOM}{
+	\begin{thebibliography}{10}
+		\bibitem {reference1}
+		\newblock {\em \textquestiondown Qu{\' e} son I18N y L10N?}
+		\newblock \textbf {programador clic}
+		\newblock [accesed 2021 Jan 02]
+		\newblock {\em https://programmerclick.com/article/973430172/}
+	
+		\bibitem {reference2}
+		\newblock {\em L10N, T9N, I18N or G11N – a new language?}
+		\newblock \textbf {WhP Localization Company}
+		\newblock [accesed 2021 Jan 02]
+		\newblock {\em https://whpintl.com/blog/l10n-t9n-i18n-or-g11n-a-new-language/}
+	
+		\bibitem {reference3}
+		\newblock {\em \textquestiondown Qu{\' e} es la localización (l10n)?}
+		\newblock \textbf {El Taller del Traductor, 2009}
+		\newblock [accesed 2021 Jan 02]
+		\newblock {\em https://eltallerdeltraductor.com/que-es-la-localizacion-l10n/}
+	\end{thebibliography}
+}
+
+\end{document} %##Indica donde termina el documento
