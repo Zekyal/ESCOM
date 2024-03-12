@@ -1,0 +1,13 @@
+-- Creación de tabla persona
+CREATE TABLE Persona (
+	ID_persona INT PRIMARY KEY IDENTITY,
+	Nombre VARCHAR(12) NOT NULL,
+	A_Paterno VARCHAR(12) NOT NULL,
+	A_Materno VARCHAR(12),
+	Fechanac DATETIME NOT NULL,
+	Sexo VARCHAR(1),
+	Tel VARCHAR(12),
+	Correo VARCHAR(32),
+	Tipo_usr VARCHAR(10),
+	Contrasenia VARCHAR(8)
+)

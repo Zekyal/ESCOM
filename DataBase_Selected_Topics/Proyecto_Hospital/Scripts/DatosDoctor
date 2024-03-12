@@ -1,0 +1,89 @@
+INSERT INTO [dbo].[Doctor]
+           ([Id_persona]
+           ,[Id_esp]
+           ,[Id_dep]
+           ,[Cedula]
+           ,[Consultorio]
+           ,[Turno])
+     VALUES
+           (7
+           ,1
+           ,7
+           ,12345678
+           ,11
+           ,'M')
+
+INSERT INTO [dbo].[Doctor]
+           ([Id_persona]
+           ,[Id_esp]
+           ,[Id_dep]
+           ,[Cedula]
+           ,[Consultorio]
+           ,[Turno])
+     VALUES
+           (8
+           ,2
+           ,5
+           ,14568974
+           ,NULL
+           ,'V')
+           
+INSERT INTO [dbo].[Doctor]
+           ([Id_persona]
+           ,[Id_esp]
+           ,[Id_dep]
+           ,[Cedula]
+           ,[Consultorio]
+           ,[Turno])
+     VALUES
+           (9
+           ,3
+           ,4
+           ,66092191
+           ,11
+           ,'M')
+
+INSERT INTO [dbo].[Doctor]
+           ([Id_persona]
+           ,[Id_esp]
+           ,[Id_dep]
+           ,[Cedula]
+           ,[Consultorio]
+           ,[Turno])
+     VALUES
+           (10
+           ,4
+           ,5
+           ,64042511
+           ,11
+           ,'V')
+           
+ INSERT INTO [dbo].[Doctor]
+           ([Id_persona]
+           ,[Id_esp]
+           ,[Id_dep]
+           ,[Cedula]
+           ,[Consultorio]
+           ,[Turno])
+     VALUES
+           (11
+           ,5
+           ,6
+           ,69121631
+           ,11
+           ,'V')
+
+INSERT INTO [dbo].[Doctor]
+           ([Id_persona]
+           ,[Id_esp]
+           ,[Id_dep]
+           ,[Cedula]
+           ,[Consultorio]
+           ,[Turno])
+     VALUES
+           (12
+           ,6
+           ,6
+           ,98042951
+           ,11
+           ,'V')

@@ -1,0 +1,9 @@
+-- Creación de tabla Paciente
+CREATE TABLE Paciente (
+	Id_persona INT,
+	NSS INT PRIMARY KEY NOT NULL,
+	Status_pac VARCHAR(10) NOT NULL,
+	Cama INT,
+	Tratamiento VARCHAR(60) NOT NULL
+CONSTRAINT Fk_paciente FOREIGN KEY (Id_persona) REFERENCES Persona(ID_persona)
+)

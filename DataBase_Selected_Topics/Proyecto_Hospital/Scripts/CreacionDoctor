@@ -1,0 +1,12 @@
+-- Creación de tabla Doctor
+CREATE TABLE Doctor (
+	Id_persona INT,
+	Id_esp INT,
+	Id_dep INT,
+	Cedula INT PRIMARY KEY NOT NULL,
+	Consultorio VARCHAR(5),
+	Turno CHAR(1),
+CONSTRAINT Fk_doctor FOREIGN KEY (Id_persona) REFERENCES Persona(ID_persona),
+CONSTRAINT Fk_esp FOREIGN KEY (Id_esp) REFERENCES Especialidad(ID_esp),
+CONSTRAINT Fk_dept FOREIGN KEY (Id_dep) REFERENCES Departamento(ID_dep)
+)

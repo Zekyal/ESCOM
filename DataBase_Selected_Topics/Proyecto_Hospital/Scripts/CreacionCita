@@ -1,0 +1,10 @@
+-- Creación de tabla Cita
+CREATE TABLE Cita (
+	NSS_pac INT,
+	Cedula_doc INT,
+	Id_Cita INT IDENTITY PRIMARY KEY NOT NULL,
+	Fecha DATETIME NOT NULL,
+	Diagnostico VARCHAR(60),
+CONSTRAINT Fk_nss FOREIGN KEY (NSS_pac) REFERENCES Paciente(NSS),
+CONSTRAINT Fk_cedula FOREIGN KEY (Cedula_doc) REFERENCES Doctor(Cedula)
+)

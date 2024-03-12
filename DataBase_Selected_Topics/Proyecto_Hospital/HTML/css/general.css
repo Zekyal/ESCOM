@@ -1,0 +1,40 @@
+body {
+    background-color: #98d1ec !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+h1 {
+    color: #17a1e0;
+}
+
+h2 {
+    color: #17a1e0;
+}
+
+#Contenido {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-width: thin;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#Formulario {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#Principal {
+    margin-top: 20px;
+}
+
+.boton {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}

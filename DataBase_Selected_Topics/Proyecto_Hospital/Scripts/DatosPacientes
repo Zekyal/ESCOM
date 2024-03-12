@@ -1,0 +1,277 @@
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (13
+           ,4563897
+           ,'Delicado'
+           ,28
+           ,'Inyecciones cada 3hrs')
+           
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (14
+           ,4563898
+           ,'Alta'
+           ,NULL
+           ,'Tomar paracetamol cada 3 dias')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (15
+           ,4563899
+           ,'Muy grave'
+           ,52
+           ,'Revision urgente en cardiologia')
+
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (16
+           ,4563900
+           ,'Urgencia'
+           , NULL
+           ,'Atencion de paramedicos y en espera a cama')
+           
+ INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (17
+           ,4563901
+           ,'Alta'
+           ,NULL
+           ,'Sin medicacion')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (18
+           ,4563902
+           ,'Delicado'
+           ,34
+           ,'100ml de insulina y suero')
+
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (19
+           ,4563903
+           ,'Muy grave'
+           , 51
+           ,'Atencion urgente de quirofano')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (20
+           ,4563904
+           ,'Urgencia'
+           , NULL
+           ,'Atencion de paramedicos')
+           
+     
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (21
+           ,4563905
+           ,'Alta'
+           ,NULL
+           ,'Sin medicacion')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (22
+           ,4563906
+           ,'Delicado'
+           ,1
+           ,'Cuidados intensivos')
+
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (23
+           ,4563907
+		   ,'Muy grave'
+           , 60
+           ,'Atencion de radiologia')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (24
+           ,4563908
+           ,'Urgencia'
+           , NULL
+           ,'Vendaje')
+           
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (25
+           ,4563909
+		   ,'Urgencia'
+           , NULL
+           ,'Atencion de paramedicos')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (26
+           ,4563910
+           ,'Muy grave'
+           , 2
+           ,'Intervencion quirugica de ultimo momento')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (27
+           ,4563911
+           ,'Delicado'
+           , 3
+           ,'Inyecciones de insulina')
+           
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (28
+           ,4563912
+           ,'Alta'
+           , NULL
+           ,'Pie izquierdo con vendaje, cuidados')
+           
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (29
+           ,4563913
+           ,'Muy grave'
+           , 8
+           ,'Intervencion quirurgica de ultimo momento')
+           
+           
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (30
+           ,4563914
+           ,'Delicado'
+           , 10
+           ,'Revision de signos cada 5 hrs')
+             
+ INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (31
+           ,4563915
+           ,'Alta'
+           , NULL
+           ,'Sin medicacion')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (32
+           ,4563916
+           ,'Muy grave'
+           , 7
+           ,'Intervencion de cardiologia')
+
+INSERT INTO [dbo].[Paciente]
+           ([Id_persona]
+           ,[NSS]
+           ,[Status_pac]
+           ,[Cama]
+           ,[Tratamiento])
+     VALUES
+           (33
+           ,4563917
+           ,'Delicado'
+           , 11
+           ,'Cuidados intensivos')

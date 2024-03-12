@@ -1,0 +1,35 @@
+-- Inserción de datos
+INSERT INTO [dbo].[Departamento]
+           ([num_ext]
+           ,[nombre_dept])
+     VALUES
+           (741
+           ,'Departamento de Radiología')
+
+INSERT INTO [dbo].[Departamento]
+           ([num_ext]
+           ,[nombre_dept])
+     VALUES
+           (450
+           ,'Pediatría')
+
+INSERT INTO [dbo].[Departamento]
+           ([num_ext]
+           ,[nombre_dept])
+     VALUES
+           (596
+           ,'Quirófano')
+
+INSERT INTO [dbo].[Departamento]
+           ([num_ext]
+           ,[nombre_dept])
+     VALUES
+           (627
+           ,'Unidad de Emergencias')
+
+INSERT INTO [dbo].[Departamento]
+           ([num_ext]
+           ,[nombre_dept])
+     VALUES
+           (165
+           ,'Medicina general')

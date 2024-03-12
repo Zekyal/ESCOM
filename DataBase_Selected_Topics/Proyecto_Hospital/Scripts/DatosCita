@@ -1,0 +1,35 @@
+
+INSERT INTO [dbo].[Cita]
+           ([NSS_pac]
+           ,[Cedula_doc]
+           ,[Fecha]
+           ,[Diagnostico])
+     VALUES
+           ( 'UMF-4563897'
+           ,'ACCAD660921-9101'
+           ,'06/05/2022'
+           ,'Esta es una muestra de texto')
+
+
+INSERT INTO [dbo].[Cita]
+           ([NSS_pac]
+           ,[Cedula_doc]
+           ,[Fecha]
+           ,[Diagnostico])
+     VALUES
+           ( 'UMF-4563898'
+           ,'FRXEN691216-3141'
+           ,'05/05/2022'
+           ,'Esta es una muestra de texto')
+
+
+INSERT INTO [dbo].[Cita]
+           ([NSS_pac]
+           ,[Cedula_doc]
+           ,[Fecha]
+           ,[Diagnostico])
+     VALUES
+           ( 'UMF-4563899'
+           ,'LERSA791113-1234'
+           ,'12/05/2021'
+           ,'Esta es una muestra de texto')

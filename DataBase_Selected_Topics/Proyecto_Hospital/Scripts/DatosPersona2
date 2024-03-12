@@ -1,0 +1,313 @@
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('José Israel'
+			,'Camacho'
+			,'Alcántar'
+			,'02/23/2002'
+			,'H'
+			,'5511197994'
+			,'Israel.Camacho@outlook.com'
+			,'Paciente'
+			,'ABD45712');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Enrique'
+			,'Morales'
+			,'López'
+			,'04/06/1995'
+			,'H'
+			,'5509472654'
+			,'Enrique.Morales@outlook.com'
+			,'Paciente'
+			,'ABD45712');
+      
+      INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Javier'
+			,'Escorza'
+			,'Rocha'
+			,'04/17/1997'
+			,'H'
+			,'5559261686'
+			,'Javier.Escorza@outlook.com'
+			,'Paciente'
+			,'ABD45713');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Edwin'
+			,'Castañeda'
+			,'Alberto'
+			,'05/15/1985'
+			,'H'
+			,'5531789443'
+			,'Edwin.Castañeda@outlook.com'
+			,'Paciente'
+			,'ABD45714');
+      
+      INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Gustavo'
+			,'Cachú'
+			,'Mejía'
+			,'07/06/1993'
+			,'H'
+			,'5536521780'
+			,'Gustavo.Cachú@outlook.com'
+			,'Paciente'
+			,'ABD45715');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Noé'
+			,'Silva'
+			,'Hernández'
+			,'09/28/1976'
+			,'H'
+			,'5560804703'
+			,'Noé_Silva@outlook.com'
+			,'Paciente'
+			,'ABD45716');
+      
+      INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Erick'
+			,'Suárez'
+			,'Vázquez'
+			,'07/28/1991'
+			,'H'
+			,'5575395194'
+			,'Erick_Suárez@hotmail.com'
+			,'Paciente'
+			,'ABD45717');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Alan Israel'
+			,'Urbina'
+			,'García'
+			,'06/27/1977'
+			,'H'
+			,'5519240382'
+			,'AlIsrael_Urbina@hotmail.com'
+			,'Paciente'
+			,'ABD45718');
+      
+      INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Genaro'
+			,'Morua'
+			,'Rodríguez'
+			,'08/03/1977'
+			,'H'
+			,'5568394594'
+			,'Genaro_Morua@hotmail.com'
+			,'Paciente'
+			,'ABD45719');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('David'
+			,'Sánchez'
+			,''
+			,'12/07/1975'
+			,'H','5590338266'
+			,'David_Sánchez@hotmail.com'
+			,'Paciente'
+			,'ABD45720');
+      
+      INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Samuel'
+			,'Bautista'
+			,'Ledesma'
+			,'12/18/1983'
+			,'H'
+			,'5504929423'
+			,'Samuel_Bautista@hotmail.com'
+			,'Paciente'
+			,'ABD45721');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Karen'
+			,'Baltazar'
+			,'Solano'
+			,'11/10/1975'
+			,'M'
+			,'5591901434'
+			,'Karen_Baltazar@hotmail.com'
+			,'Paciente'
+			,'ABD45722');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Viridiana'
+			,'Mendoza'
+			,'Cerón'
+			,'11/18/1986'
+			,'M'
+			,'5543838780'
+			,'Viridiana_Mendoza@hotmail.com'
+			,'Paciente'
+			,'ABD45723');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Erick'
+			,'Benavides'
+			,'Del Valle'
+			,'04/08/1978'
+			,'H'
+			,'5531126460'
+			,'Erick_Benavides@hotmail.com'
+			,'Paciente'
+			,'ABD45724');
+
+INSERT INTO [dbo].[Persona]
+           ([Nombre]
+           ,[A_Paterno]
+           ,[A_Materno]
+           ,[Fechanac]
+           ,[Sexo]
+           ,[Tel]
+           ,[Correo]
+           ,[Tipo_usr]
+           ,[Contrasenia])
+     VALUES
+           ('Gregorio'
+			,'Sakville'
+			,''
+			,'02/14/1981'
+			,'H'
+			,'5548078846'
+			,'Gregorio_Sakville@hotmail.com'
+			,'Paciente'
+			,'ABD45725');

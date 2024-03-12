@@ -1,0 +1,12 @@
+-- Creación de tabla Departamento
+CREATE TABLE Departamento (
+	ID_dep INT IDENTITY PRIMARY KEY NOT NULL,
+	num_ext INT NOT NULL,
+	nombre_dept VARCHAR(40) NOT NULL
+)
+
+-- Creación de tabla Especialidad
+CREATE TABLE Especialidad (
+	ID_esp INT IDENTITY PRIMARY KEY NOT NULL,
+	nombre_esp VARCHAR(40) NOT NULL
+)

@@ -1,0 +1,30 @@
+-- Inserción de datos
+INSERT INTO [dbo].[Especialidad]
+           ([nombre_esp])
+     VALUES
+           ('Sin especialidad')
+
+INSERT INTO [dbo].[Especialidad]
+           ([nombre_esp])
+     VALUES
+           ('Radiologo')
+
+INSERT INTO [dbo].[Especialidad]
+           ([nombre_esp])
+     VALUES
+           ('Pediatra')
+
+		   INSERT INTO [dbo].[Especialidad]
+           ([nombre_esp])
+     VALUES
+           ('Cirujano general')
+
+INSERT INTO [dbo].[Especialidad]
+           ([nombre_esp])
+     VALUES
+           ('Paramédico')
+
+INSERT INTO [dbo].[Especialidad]
+           ([nombre_esp])
+     VALUES
+           ('Pediatra')
